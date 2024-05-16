@@ -1,20 +1,24 @@
 import reflex as rx
-
-
+from PythonWeb.components.navbar import navbar
+from PythonWeb.views.header.header import header
+from PythonWeb.views.links.links import links
+from PythonWeb.components.footer import footer
 class State(rx.State):
     pass
 
 
 def index() -> rx.Component:
-    return rx.hstack(rx.box(rx.heading("Víctor Jiménez", color="black"),
-        rx.text("Soy un desarrollador de software, me gusta la programación y la tecnología en general.", color="black"),
-        background_color="yellow",
-        border_radius="8px",
-        width="50%",
-        margin="8px",
-        padding="8px"), aling="center", margin="8px")
-
-
+    return rx.box(
+        navbar(),
+        rx.center(
+        rx.vstack(
+        header(),
+        links(),
+        align="center",
+        max_width="600px",)
+        ),
+        footer()
+    )
 app = rx.App()
 app.add_page(index)
 app._compile()
