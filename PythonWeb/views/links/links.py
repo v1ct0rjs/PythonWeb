@@ -26,5 +26,5 @@ def links() -> rx.Component:
         link_button("Instagram",
                     "Perfil De Instagram",
                     "https://www.instagram.com/v1ct0rjs/"),
-        align = "center", width = "100%"
+        align = "start", width = "100%",
     )
