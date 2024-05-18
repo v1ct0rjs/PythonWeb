@@ -4,5 +4,6 @@ from PythonWeb.styles.styles import *
 
 def title(text: str) -> rx.Component:
     return rx.heading(
-        text, stiles=head_stile
+        text,
+        stiles=head_stile,
     )

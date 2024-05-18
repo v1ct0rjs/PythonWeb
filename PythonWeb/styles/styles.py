@@ -10,6 +10,7 @@ class Size(Enum):
     SMALL = '0.5em'
     MEDIUM = '0.8em'
     LARGE = '1em'
+    MLARGE = '1.5em'
     XLARGE = '2em'
 
 # Styles
@@ -38,8 +39,7 @@ button_body_style = dict(
 )
 
 head_stile = dict(
-    size='8',
     width='100%',
-    padding=Size.MEDIUM.value
+    padding=Size.MEDIUM.value,
 )
 
