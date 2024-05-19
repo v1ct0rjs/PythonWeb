@@ -1,13 +1,13 @@
 import reflex as rx
 from PythonWeb.styles.styles import *
 
-def link_button(title: str, subtitle: str, url: str) -> rx.Component:
+def link_button(title: str, subtitle: str, url: str, icon: str) -> rx.Component:
     return rx.link(
         rx.button(
             rx.hstack(
                 rx.box(
                     rx.icon(
-                        tag="activity",
+                        tag=icon,
                         width=Size.XLARGE.value,
                         height=Size.XLARGE.value,
                         margin_top=Size.MEDIUM.value,

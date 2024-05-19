@@ -7,7 +7,7 @@ def header () -> rx.Component:
         rx.hstack(
         rx.avatar(name="Víctor Jiménez",
                   fallback='VJ',
-                  color_scheme="blue",
+                  color_scheme="yellow",
                   variant="solid",
                   high_contrast=False,
                   radius="full",

@@ -4,11 +4,10 @@ from PythonWeb.views.header.header import header
 from PythonWeb.views.links.links import links
 from PythonWeb.components.footer import footer
 from PythonWeb.styles.styles import *
-
+from PythonWeb.constants import *
 
 class State(rx.State):
     pass
-
 
 def index() -> rx.Component:
     return rx.box(
@@ -16,9 +15,12 @@ def index() -> rx.Component:
         rx.center(
             rx.vstack(
                 header(),
-                links(),
+                links('Mis Proyectos', proyectos),
+                links('Redes Sociales', enlaces),
                 align="center",
-                max_width=MAX_WIDTH, ),
+                max_width=MAX_WIDTH,
+                spacing='6',
+                ),
             widht="100%",
             margin_y=Size.XLARGE,
         ),
