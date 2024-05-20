@@ -20,3 +20,8 @@ class TextColor(Enum):
     BLACK = '#000000'  # Black color
     WHITE = '#FFFFFF'  # White color
     GREY = '#646464'  # Grey color
+
+
+class Fonts(Enum):
+    JETBRAINS_MONO = 'JetBrains Mono'
+

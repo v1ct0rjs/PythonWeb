@@ -10,12 +10,13 @@ def link_button(title: str, subtitle: str, url: str, icon: str) -> rx.Component:
                         tag=icon,
                         width=Size.XLARGE.value,
                         height=Size.XLARGE.value,
-                        margin_top=Size.MEDIUM.value,
+                        margin=Size.MEDIUM.value,
                     ),
                 ),
                 rx.vstack(
                     rx.text(title, style=button_title_style),
                     rx.text(subtitle, style=button_body_style),
+                    spacing='0',
                 ),
                 width="100%",
                 align_items="start"
