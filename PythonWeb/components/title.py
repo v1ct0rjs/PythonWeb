@@ -6,4 +6,5 @@ def title(text: str) -> rx.Component:
     return rx.heading(
         text,
         stiles=head_stile,
+        color=TextColor.ORANGE.value,
     )

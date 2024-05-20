@@ -1,16 +1,16 @@
 import reflex as rx
-from PythonWeb.styles.styles import *
+import PythonWeb.styles.styles as styles
+from PythonWeb.styles.styles import Size
+
+
 
 def navbar() -> rx.Component:
     return rx.hstack(
-        rx.text.strong("Portfolio de Víctor Jiménez",
+        rx.text("Portfolio de Víctor Jiménez",
                 color="black",
                 align="center",
-                font_size=Size.LARGE.value),
-        position="sticky",
-        bg="lightgray",
-        padding_x=Size.SMALL.value,
-        padding_y=Size.SMALL.value,
-        z_index="999",
-        top="0",
+                font_size=Size.MLARGE.value,
+
+                ),
+        style=styles.navbar_style,
     )
