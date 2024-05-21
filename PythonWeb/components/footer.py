@@ -5,11 +5,21 @@ from PythonWeb.styles.colors import Colors as Color
 
 def footer() -> rx.Component:
     return rx.vstack(
-        rx.image(src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white", width="250px"),
-        rx.link(f"link {datetime.date.today().year}", href="https://www.python.org/", is_external=True, font_size=Size.MEDIUM.value),
-        rx.text("Python", font_size=Size.MEDIUM.value, margin_top='-15px'),
+        rx.center(
+            rx.hstack(
+                rx.image(
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+                    width="150px",
+                    padding_right=Size.XXLARGE.value),  # Aumenta este valor para más espacio
+                rx.image(src="cybersecurity-essentials.png", width="150px", padding_right=Size.XXLARGE.value),
+                rx.image(src="Tux_Mono.png", width="85px"),
+                align="center"
+            )
+        ),
+        rx.text(f"2023 - {datetime.date.today().year} Portfolio By Víctor Jiménez version 1.0",
+                font_size=Size.LARGE.value),
         align="center",
-        margin_bottom=Size.XLARGE.value,
-        color=TextColor.GREY.value,
+        color=TextColor.CONTENT.value,
         background_color=Color.BACKGROUND.value,
+        font_family=Fonts.JETBRAINS_MONO.value,
     )

@@ -17,6 +17,9 @@ class Size(Enum):
     LARGE = '1em'
     MLARGE = '1.5em'
     XLARGE = '2em'
+    XXLARGE = '4em'
+    BIG = '6em'
+    XBIG = '8em'
 
 # Styles
 
@@ -62,7 +65,7 @@ head_stile = dict(
 navbar_style = dict(
     position="sticky",
     #background="linear-gradient(to bottom, " + Color.CONTENT.value + ", transparent)",
-    background='transparent',
+    background=Color.BACKGROUND.value,
     padding_x=Size.SMALL.value,
     padding_y=Size.SMALL.value,
     z_index="999",
