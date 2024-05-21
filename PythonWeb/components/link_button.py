@@ -11,6 +11,7 @@ def link_button(title: str, subtitle: str, url: str, icon: str) -> rx.Component:
                         width=Size.XLARGE.value,
                         height=Size.XLARGE.value,
                         margin=Size.MEDIUM.value,
+                        color=Color.BLACK.value,
                     ),
                 ),
                 rx.vstack(
