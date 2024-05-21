@@ -2,10 +2,10 @@ import reflex as rx
 from PythonWeb.styles.styles import *
 
 
-def link_icon(url: str) -> rx.Component:
+def link_icon(url: str, icon: str) -> rx.Component:
     return rx.link(
         rx.icon(
-            tag="link", size=15
+            tag=icon, size=20
         ),
         href=url,
         is_external=True,
