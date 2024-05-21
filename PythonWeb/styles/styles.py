@@ -29,9 +29,9 @@ BASE_STYLE = {
         "padding": Size.SMALL.value,
         "border_radius": Size.SMALL.value,
         "color": TextColor.BLACK.value,
-        "background_color": Color.DARKORANGE.value,
+        "background_color": Color.PRIMARY.value,
         "_hover": {
-            "background_color": Color.CONTENT.value,
+            "background_color": Color.WHITE.value,
         }
     },
     rx.link: {
@@ -43,30 +43,30 @@ BASE_STYLE = {
 
 button_title_style = dict(
     font_size=Size.MLARGE.value,
-    color=TextColor.ORANGE.value,
+    color=TextColor.BLACK.value,
     font_family=Fonts.JETBRAINS_MONO.value,
 )
 
 button_body_style = dict(
     font_size=Size.LARGE.value,
-    color=TextColor.GREY.value,
+    color=TextColor.CONTENT.value,
     font_family=Fonts.JETBRAINS_MONO.value,
 )
 
 head_stile = dict(
     width='100%',
     padding=Size.MEDIUM.value,
-    color=Color.DARKORANGE.value,
+    color=Color.PRIMARY.value,
 )
 
 navbar_style = dict(
     position="sticky",
-    bg=Color.ORANGE.value,
+    #background="linear-gradient(to bottom, " + Color.CONTENT.value + ", transparent)",
+    background='transparent',
     padding_x=Size.SMALL.value,
     padding_y=Size.SMALL.value,
     z_index="999",
     top="0",
-    font_family=Fonts.JETBRAINS_MONO.value,
+    font_family=Fonts.UBUNTU_SANS_MONO.value,
     font_weight="600",
-    font_style="italic",
 )
