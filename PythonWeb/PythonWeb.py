@@ -17,6 +17,7 @@ def index() -> rx.Component:
                 header(),
                 links('Mis Proyectos', proyectos),
                 links('Redes Sociales', enlaces),
+                links('Certificaciónes', certificados),
                 align="center",
                 max_width=MAX_WIDTH,
                 spacing='6',
