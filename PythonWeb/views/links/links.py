@@ -22,7 +22,7 @@ from PythonWeb.components.title import title
 def links(titulo: str, enlaces: list) -> rx.Component:
     componentes = [title(titulo)]
     for enlace in enlaces:
-        componentes.append(link_button(enlace['title'], enlace['subtitle'], enlace['url'], enlace['icon']))
+        componentes.append(link_button(enlace['title'], enlace['subtitle'], enlace['url'], enlace['icon'], enlace.get('icon_path')))
     return rx.vstack(*componentes, align="start", width="100%")
 
 

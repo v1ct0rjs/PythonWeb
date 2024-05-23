@@ -14,7 +14,6 @@ def header () -> rx.Component:
                   border_width='3px',
                   src="avatar.png",
                   fallback='VJ',
-                  color_scheme="yellow",
                   variant="solid",
                   high_contrast=False,
                   radius="full",
