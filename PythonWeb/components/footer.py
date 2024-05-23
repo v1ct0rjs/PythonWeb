@@ -10,9 +10,10 @@ def footer() -> rx.Component:
                 rx.image(
                     src="python.svg",
                     width="100px",
-                    padding_right=Size.XLARGE.value),  # Aumenta este valor para más espacio
-                rx.image(src="Tux_Mono.png", width="60px"),
-                rx.image(src="Reflex_white.svg", width="150px", padding_left=Size.XLARGE.value),
+                    padding_right=Size.XLARGE.value,
+                    alt="Logo de Python, dos serpientes entrelazadas"),  # Aumenta este valor para más espacio
+                rx.image(src="Tux_Mono.png", width="60px", alt="Logo de Tux, la mascota de Linux un pinguino"),
+                rx.image(src="Reflex_white.svg", width="150px", padding_left=Size.XLARGE.value, alt="Logo de reflex"),
                 align="center"
             )
         ),

@@ -16,6 +16,7 @@ def link_button(title: str, subtitle: str, url: str, icon: str, icon_path: str =
             width=Size.XLARGE.value,
             height=Size.XLARGE.value,
             margin=Size.MEDIUM.value,
+            alt="Icono"
         )
 
     return rx.link(

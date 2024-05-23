@@ -13,6 +13,7 @@ def header () -> rx.Component:
                   border_color=Color.CONTENT.value,
                   border_width='3px',
                   src="avatar.png",
+                  alt="Avatar de Víctor Jiménez",
                   fallback='VJ',
                   variant="solid",
                   high_contrast=False,
