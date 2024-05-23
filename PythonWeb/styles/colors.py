@@ -3,7 +3,7 @@ from enum import Enum
 class Colors(Enum):
     PRIMARY = '#1dd3b0'  # Color Verde Agua
     SECONDARY = '#b2ff9e'  # Color Verde Claro
-    BACKGROUND = '#000d05ff'  # Color Azul Oscuro
+    BACKGROUND = '#000000'  # Color Azul Oscuro
     CONTENT = '#086375'  # Color Azul Petróleo
     BLACK = '#000000'  # Color Negro
     WHITE = '#FFFFFF'  # Color Blanco

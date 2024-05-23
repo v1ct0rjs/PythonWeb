@@ -73,3 +73,16 @@ navbar_style = dict(
     font_family=Fonts.UBUNTU_SANS_MONO.value,
     font_weight="600",
 )
+
+no_button_style = dict(
+        width="100%",
+        height="100%",
+        display="block",
+        padding=Size.SMALL.value,
+        border_radius=Size.SMALL.value,
+        color=TextColor.BLACK.value,
+        background_color=Color.BACKGROUND.value,
+        border="4px",
+        border_color=Color.PRIMARY.value,
+        border_style="solid",
+)
