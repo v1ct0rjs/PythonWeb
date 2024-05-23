@@ -17,8 +17,9 @@ def index() -> rx.Component:
             rx.vstack(
                 header(),
                 links('Mis Proyectos', proyectos),
-                links('Redes Sociales', enlaces),
                 info_button('Certificaciónes', certificados),
+                links('Redes Sociales', enlaces),
+
                 align="center",
                 max_width=MAX_WIDTH,
                 spacing='6',
@@ -38,5 +39,5 @@ app = rx.App(
         "https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
         ],
 )
-app.add_page(index)
+app.add_page(index, title="V1cT0r's Portfolio")
 app._compile()
