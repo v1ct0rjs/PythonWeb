@@ -9,8 +9,7 @@ proyectos = [
     {"title": "Pulsera detector de actividad", "subtitle": "Programa en micropython para competir en los TELECO GAMES", "url": "https://github.com/v1ct0rjs/m5_move-detector", "icon": "watch"},
     {"title": "Pyng", "subtitle": "Script detector de equipos en LAN", "url": "https://github.com/v1ct0rjs/Pyng", "icon": "network"},
     {"title": "Conversor DBOH", "subtitle": "Conversor Decimal, Binario, Hexadecimal y Octal", "url": "https://github.com/v1ct0rjs/DBOH", "icon": "calculator"},
-
-    {"title": "Python Web App", "subtitle": "Código de está web misma web programáda en Python", "url": "http://", "icon": "app-window"},
+    {"title": "Python Web App", "subtitle": "Código de está web misma web programáda en Python", "url": "https://github.com/v1ct0rjs/PythonWeb", "icon": "app-window"},
 ]
 enlaces = [
     {"title": "LinkedIn", "subtitle": "Perfil De LinkedIn", "url": "https://www.linkedin.com/in/v%C3%ADctor-manuel-jim%C3%A9nez-s%C3%A1nchez-53286130b/", "icon": "linkedin"},
