@@ -2,8 +2,8 @@
 
 proyectos = [
     {"title": "GitHub", "subtitle": "Repositorios proyectos", "url": "https://github.com/v1ct0rjs", "icon": "github"},
-    {"title": "Pyter", "subtitle": "Pequeño programa de mensajeria cliente-servidor que usa gprc", "url": "https://github.com/v1ct0rjs/Pyter", "icon": "message-square-text"},
-    {"title": "Pulsera detector de actividad", "subtitle": "Programa escrito en python para competir en los TELECO GAMES", "url": "https://www.linkedin.com/in/v1ct0rjs/", "icon": "watch"},
+    {"title": "Pyter", "subtitle": "Pequeño programa de mensajeria cliente-servidor que usa gprc", "url": "https://github.com/v1ct0rjs/pyther", "icon": "message-square-text"},
+    {"title": "Pulsera detector de actividad", "subtitle": "Programa escrito en python para competir en los TELECO GAMES", "url": "https://github.com/v1ct0rjs/m5_move-detector", "icon": "watch"},
     {"title": "Ruleta de la fortuna", "subtitle": "Juego de la ruleta de la fortuna", "url": "https://github.com/v1ct0rjs/2324_PythonPOO_VictorJimenez/tree/main/UT3/TE3.1", "icon": "dices"},
     {"title": "PyAgenda", "subtitle": "Scrip, gestor de tareas CLI", "url": "https://www.instagram.com/v1ct0rjs/", "icon": "calendar-plus"},
     {"title": "Ping", "subtitle": "Script detector de equipos en LAN", "url": "http://", "icon": "network"},
@@ -18,7 +18,7 @@ enlaces = [
 ]
 
 certificados = [
-    {"title": "Cybersecurity Cisco", "subtitle": "Certificado de ciberseguridad", "url":"", "icon": "shield-check"},
+    {"title": "Cybersecurity Cisco", "subtitle": "Certificado de ciberseguridad"},
  ]
 
 # Constantes de URLS
@@ -35,6 +35,6 @@ URL_MAPS = "https://www.google.com/maps/@38.4250031,-6.4183859,15z?entry=ttu"
 
 #Texto de la página
 
-TEXTO_TITULO = "Desarrollador Junior, Pythonista 🐍 y Linuxero 🐧"
-TEXTO_HEADER = """Hola 👋, soy un desarrollador junior entusiasta 😊 con un sólido conocimiento en Python 🐍, HTML 🌐, C 🖥️, electrónica 🔌 y servidores 💾.
+TEXTO_TITULO = "Desarrollador, Pythonista 🐍 y Linuxero 🐧"
+TEXTO_HEADER = """Hola 👋, soy un desarrollador entusiasta 😊 con un sólido conocimiento en Python 🐍, HTML 🌐, C 🖥️, electrónica 🔌 y servidores 💾.
 He programado para proyectos de domótica 🛠️ y ahora estoy expandiendo mis horizontes hacia el desarrollo frontend 🎨."""
