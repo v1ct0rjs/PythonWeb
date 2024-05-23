@@ -7,8 +7,8 @@ from PythonWeb.styles.styles import *
 from PythonWeb.constants import *
 from PythonWeb.components.info_button import info_button
 
-class State(rx.State):
-    pass
+# class State(rx.State):
+#     pass
 
 def index() -> rx.Component:
     return rx.box(
