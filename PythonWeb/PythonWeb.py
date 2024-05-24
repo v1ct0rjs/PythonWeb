@@ -9,6 +9,7 @@ from PythonWeb.components.info_button import info_button
 
 def index() -> rx.Component:
     return rx.box(
+        rx.script("document.documentElement.lang = 'es'"),
         navbar(),
         rx.center(
             rx.vstack(
