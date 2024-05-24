@@ -7,9 +7,6 @@ from PythonWeb.styles.styles import *
 from PythonWeb.constants import *
 from PythonWeb.components.info_button import info_button
 
-# class State(rx.State):
-#     pass
-
 def index() -> rx.Component:
     return rx.box(
         navbar(),
@@ -30,14 +27,35 @@ def index() -> rx.Component:
         footer()
     )
 
-
 app = rx.App(
     style=BASE_STYLE,
-    stylesheets=[
-        "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap",
-        "https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap",
-        "https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+    stylesheets=GFONTS,
+    head_components=[
+        rx.script(src=f"https://www.googletagmanager.com/gtag/js?id={GTAG}"),
+        rx.script(
+            """
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-QFHWGRCS3T');
+            """),
         ],
 )
-app.add_page(index, title="V1cT0r's Portfolio")
-app._compile()
+title = "V1cT0r's Portfolio"
+description = TEXTO_HEADER
+preview = "/assets/preview.png"
+
+meta = [
+    {"name": "og:type", "content": "website"},
+    {"name": "og:title", "content": str(title)},
+    {"name": "og:description", "content": str(description)},
+    {"name": "og:image", "content": str(preview)},
+    {"name": "twitter:card", "content": "summary_large_image"},
+    {"name": "twitter:site", "content": "@vmjimsan"},
+]
+
+app.add_page(index,
+             title = title,
+             description = description,
+             image = "/assets/avatar.png",
+             meta = meta)

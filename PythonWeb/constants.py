@@ -38,3 +38,14 @@ URL_MAPS = "https://www.google.com/maps/@38.4250031,-6.4183859,15z?entry=ttu"
 TEXTO_TITULO = "Desarrollador, Pythonista 🐍 y Linuxero 🐧"
 TEXTO_HEADER = """Hola 👋, soy un desarrollador entusiasta 😊 con un sólido conocimiento en Python 🐍, HTML 🌐, C 🖥️, electrónica 🔌 y servidores 💾.
 He programado para proyectos de domótica 🛠️ y ahora estoy expandiendo mis horizontes hacia el desarrollo frontend 🎨."""
+
+
+# Fuentes de la página
+
+GFONTS = [
+        "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap",
+        "https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap",
+        "https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+        ]
+
+GTAG = "G-QFHWGRCS3T"
