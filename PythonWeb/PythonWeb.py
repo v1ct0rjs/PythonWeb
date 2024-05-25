@@ -15,7 +15,7 @@ def index() -> rx.Component:
             rx.vstack(
                 header(),
                 links('Mis Proyectos', proyectos),
-                info_button('Certificaciónes', certificados),
+                info_button('Certificaciones', certificados),
                 links('Redes Sociales', enlaces),
 
                 align="center",
