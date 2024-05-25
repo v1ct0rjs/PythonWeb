@@ -5,7 +5,7 @@ proyectos = [
     {"title": "Pyter", "subtitle": "Pequeño programa de mensajeria cliente-servidor que usa gprc", "url": "https://github.com/v1ct0rjs/pyther", "icon": "message-square-text"},
     {"title": "Ruleta de la fortuna", "subtitle": "Juego de la ruleta de la fortuna", "url": "https://github.com/v1ct0rjs/RuletaDeLaFortuna/", "icon": "dices"},
     {"title": "Ahorcado", "subtitle": "Juego de adivinar palabras", "url": "https://github.com/v1ct0rjs/ahorcado/", "icon": "signpost-big"},
-    {"title": "PyAgenda", "subtitle": "Scrip, gestor de tareas CLI", "url": "https://github.com/v1ct0rjs/PyAgenda", "icon": "calendar-plus"},
+    {"title": "PyAgenda", "subtitle": "Script, gestor de tareas CLI", "url": "https://github.com/v1ct0rjs/PyAgenda", "icon": "calendar-plus"},
     {"title": "Pulsera detector de actividad", "subtitle": "Programa en micropython para competir en los TELECO GAMES", "url": "https://github.com/v1ct0rjs/m5_move-detector", "icon": "watch"},
     {"title": "Pyng", "subtitle": "Script detector de equipos en LAN", "url": "https://github.com/v1ct0rjs/Pyng", "icon": "network"},
     {"title": "Conversor DBOH", "subtitle": "Conversor Decimal, Binario, Hexadecimal y Octal", "url": "https://github.com/v1ct0rjs/DBOH", "icon": "calculator"},
