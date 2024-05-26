@@ -4,15 +4,15 @@ from PythonWeb.components.link_icon import link_icon
 from PythonWeb.components.info_text import info_text
 from PythonWeb.styles.colors import Colors as Color
 from PythonWeb.styles.colors import Fonts as Fonts
-from PythonWeb.constants import *
 
-def header () -> rx.Component:
+
+def header (titulo: str, header: str, country: str, contact: str) -> rx.Component:
     return rx.vstack(
         rx.hstack(
         rx.avatar(name="Víctor Jiménez",
                   border_color=Color.CONTENT.value,
                   border_width='3px',
-                  src="avatar.png",
+                  src="/avatar.png",
                   alt="Avatar de Víctor Jiménez",
                   fallback='VJ',
                   variant="solid",
@@ -27,16 +27,16 @@ def header () -> rx.Component:
                    color=Color.PRIMARY.value,
                    font_family=Fonts.JETBRAINS_MONO.value,
                    font_weight="700"),
-        rx.text(TEXTO_TITULO,
+        rx.text(titulo,
                 font_size=Size.MEDIUM.value,
                 color=TextColor.WHITE.value),
             rx.hstack(
                 rx.flex(
                     info_text(
-                        "Zafra, Badajoz, Extremadura", "España"),
+                        "Zafra, Badajoz, Extremadura", country),
                 ),
             ),
-            rx.hstack(rx.text("Contacto: ", font_size=Size.MEDIUM.value, color=TextColor.WHITE.value),
+            rx.hstack(rx.text(contact, font_size=Size.MEDIUM.value, color=TextColor.WHITE.value),
                 link_icon("mailto:vmjimenezs02@educarex.es", "mail"),
                 link_icon("https://t.me/p3sc4", "send"),
                 color=Color.PRIMARY.value,
@@ -44,7 +44,7 @@ def header () -> rx.Component:
         ),
         spacing = '5'
         ),
-        rx.text(TEXTO_HEADER,
+        rx.text(header,
                 font_size=Size.LARGE.value,
                 color=TextColor.WHITE.value),
         align_items="start",

@@ -2,16 +2,19 @@ import reflex as rx
 import PythonWeb.styles.styles as styles
 from PythonWeb.styles.styles import Size
 from PythonWeb.styles.colors import Colors as Color
+from PythonWeb.routes import Route
+from PythonWeb.components.ant_components import float_button
 
-
-
-def navbar() -> rx.Component:
+def navbar(text: str) -> rx.Component:
     return rx.hstack(
-        rx.text("['V1cT0r', 'l1nuX3r0', 'PyTh0n1sta', 'D3v3l0p3r']",
+        rx.link(
+        rx.text(text,
                 color=Color.PRIMARY.value,
                 align="center",
                 font_size=Size.MLARGE.value,
-
                 ),
+        href=Route.INDEX.value,
+        ),
+        float_button(),
         style=styles.navbar_style,
     )
