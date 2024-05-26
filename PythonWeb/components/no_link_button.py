@@ -5,7 +5,7 @@ def no_link_button(title: str, subtitle: str) -> rx.Component:
     return rx.box(
             rx.hstack(
                     rx.image(
-                        src='cybersecurity-essentials.png',
+                        src='/cybersecurity-essentials.png',
                         width=Size.XXLARGE.value,
                         height=Size.XXLARGE.value,
                         margin=Size.MEDIUM.value,

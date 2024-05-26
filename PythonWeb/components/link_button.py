@@ -1,6 +1,7 @@
 import reflex as rx
 from PythonWeb.styles.styles import *
 
+
 def link_button(title: str, subtitle: str, url: str, icon: str, icon_path: str = None) -> rx.Component:
     if icon_path is None:
         icon_component = rx.icon(
