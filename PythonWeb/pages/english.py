@@ -8,7 +8,7 @@ from PythonWeb.constants import *
 from PythonWeb.components.info_button import info_button
 import PythonWeb.utils as utils
 from PythonWeb.routes import Route
-
+from PythonWeb.components.ant_components import FloatButtonIdex as float_button_index
 
 @rx.page(
     route=Route.ENG.value,
@@ -27,7 +27,7 @@ def eng() -> rx.Component:
                 links('Projects', projects),
                 info_button('Certifications', certs),
                 links('Social Networks', socials),
-
+                float_button_index(),
                 align="center",
                 max_width=MAX_WIDTH,
                 spacing='6',
