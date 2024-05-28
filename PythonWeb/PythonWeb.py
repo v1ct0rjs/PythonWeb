@@ -4,6 +4,9 @@ from PythonWeb.constants import *
 from PythonWeb.pages.index import index
 from PythonWeb.pages.english import eng
 
+class State(rx.State):
+    """Define your app state here."""
+
 app = rx.App(
     style=BASE_STYLE,
     stylesheets=GFONTS,
