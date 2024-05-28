@@ -10,7 +10,7 @@ import PythonWeb.utils as utils
 
 
 @rx.page(
-    title=TEXTO_TITULO,
+    title=TEXT_TAB_TITLE,
     description=TEXTO_HEADER,
     image=utils.avatar,
     meta=utils.index_meta

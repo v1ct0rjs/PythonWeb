@@ -79,7 +79,7 @@ URL_TWITCH = "https://www.twitch.tv/v1ct0rjs/"
 URL_MAPS = "https://www.google.com/maps/@38.4250031,-6.4183859,15z?entry=ttu"
 
 # Texto de la página
-
+TEXT_TAB_TITLE = "V1cT0r's Portfolio"
 TEXTO_TITULO = "Desarrollador, Pythonista 🐍 y Linuxero 🐧"
 TEXTO_HEADER = """Hola 👋, soy un desarrollador entusiasta 😊 con un sólido conocimiento en Python 🐍, HTML 🌐, C 🖥️, electrónica 🔌 y servidores 💾.
 He programado para proyectos de domótica 🛠️ y ahora estoy expandiendo mis horizontes hacia el desarrollo frontend 🎨."""

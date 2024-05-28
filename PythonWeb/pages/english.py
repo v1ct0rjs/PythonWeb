@@ -12,7 +12,7 @@ from PythonWeb.routes import Route
 
 @rx.page(
     route=Route.ENG.value,
-    title=utils.eng_title,
+    title=TEXT_TAB_TITLE,
     description=utils.eng_description,
     image=utils.avatar,
     meta=utils.eng_meta
