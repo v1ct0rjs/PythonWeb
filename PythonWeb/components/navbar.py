@@ -5,6 +5,7 @@ from PythonWeb.styles.colors import Colors as Color
 from PythonWeb.routes import Route
 from PythonWeb.components.ant_components import float_button
 
+
 def navbar(text: str) -> rx.Component:
     return rx.hstack(
         rx.link(
@@ -15,6 +16,6 @@ def navbar(text: str) -> rx.Component:
                 ),
         href=Route.INDEX.value,
         ),
-        float_button(),
+        #float_button(),
         style=styles.navbar_style,
     )

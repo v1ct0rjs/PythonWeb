@@ -7,6 +7,7 @@ from PythonWeb.styles.styles import *
 from PythonWeb.constants import *
 from PythonWeb.components.info_button import info_button
 import PythonWeb.utils as utils
+from PythonWeb.components.ant_components import float_button
 
 
 @rx.page(
@@ -25,7 +26,7 @@ def index() -> rx.Component:
                 links('Mis Proyectos', proyectos),
                 info_button('Certificaciones', certificados),
                 links('Redes Sociales', enlaces),
-
+                float_button(),
                 align="center",
                 max_width=MAX_WIDTH,
                 spacing='6',
