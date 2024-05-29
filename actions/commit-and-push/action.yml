@@ -14,13 +14,17 @@ runs:
   using: 'composite'
   steps:
     - name: Set up Git
+      shell: bash
       run: |
         git config --global user.name "${{ inputs.commit_user_name }}"
         git config --global user.email "${{ inputs.commit_user_email }}"
     - name: Commit changes
+      shell: bash
       run: |
         git add .
         git commit -m "${{ inputs.commit_message }}"
     - name: Push changes
+      shell: bash
       run: |
         git push
+
