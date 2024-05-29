@@ -24,7 +24,7 @@ jobs:
 
       - name: Run build script
         run: |
-          chmod +x ./PythonWeb/remote_build.sh
+          chmod +x ./remote_build.sh
           ./remote_build.sh
 
       - name: Commit and Push changes
@@ -33,4 +33,3 @@ jobs:
           commit_message: Update Static Build
           commit_user_name: v1ct0rjs [GitHub Actions]
           commit_user_email: vmjimenezs02@educarex.es
-
