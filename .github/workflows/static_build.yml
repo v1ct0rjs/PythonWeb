@@ -1,0 +1,35 @@
+name: Static Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    if: github.repository == 'v1ct0rjs/PythonWeb'
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Run build script
+        run: |
+          chmod +x ./remote_build.sh
+          ./remote_build.sh
+
+      - name: Commit and Push changes
+        uses: ./actions/commit-and-push
+        with:
+          commit_message: Update Static Build
+          commit_user_name: v1ct0rjs [GitHub Actions]
+          commit_user_email: vmjimenezs02@educarex.es
