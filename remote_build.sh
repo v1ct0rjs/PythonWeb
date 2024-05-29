@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd PythonWeb
 python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip

@@ -1,0 +1,26 @@
+name: 'Commit and Push changes'
+description: 'Commits and pushes changes to the repository'
+inputs:
+  commit_message:
+    description: 'The commit message'
+    required: true
+  commit_user_name:
+    description: 'The name of the user for the commit'
+    required: true
+  commit_user_email:
+    description: 'The email of the user for the commit'
+    required: true
+runs:
+  using: 'composite'
+  steps:
+    - name: Set up Git
+      run: |
+        git config --global user.name "${{ inputs.commit_user_name }}"
+        git config --global user.email "${{ inputs.commit_user_email }}"
+    - name: Commit changes
+      run: |
+        git add .
+        git commit -m "${{ inputs.commit_message }}"
+    - name: Push changes
+      run: |
+        git push
