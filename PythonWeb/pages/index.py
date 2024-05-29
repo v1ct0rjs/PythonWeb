@@ -8,6 +8,12 @@ from PythonWeb.constants import *
 from PythonWeb.components.info_button import info_button
 import PythonWeb.utils as utils
 from PythonWeb.components.ant_components import float_button
+from PythonWeb.api.api import hello
+
+class IndexState(rx.State):
+    @rx.var
+    def say_hello(Self) -> str:
+        return hello()
 
 
 @rx.page(
@@ -22,6 +28,7 @@ def index() -> rx.Component:
         navbar(NAVBAR_ESP),
         rx.center(
             rx.vstack(
+                rx.text(IndexState.say_hello, color="white"),
                 header(TEXTO_TITULO, TEXTO_HEADER, TEXTO_PAIS, TEXTO_CONTACTO),
                 links('Mis Proyectos', proyectos),
                 info_button('Certificaciones', certificados),
