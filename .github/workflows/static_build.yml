@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    if: github.repository == 'v1ct0rj/PythonWeb'
+    if: github.repository == 'v1ct0rjs/PythonWeb'
     runs-on: ubuntu-latest
 
     permissions:
@@ -22,8 +22,10 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run script
-        run: ./PythonWeb/remote_build.sh
+      - name: Run build script
+        run: |
+          chmod +x ./PythonWeb/remote_build.sh
+          ./PythonWeb/remote_build.sh
 
       - name: Comit and Push changes
         uses: stefanzweifel/git-auto-commit-actions@v5
