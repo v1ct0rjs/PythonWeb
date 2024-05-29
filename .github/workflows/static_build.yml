@@ -1,0 +1,34 @@
+name: Statatic Build
+
+on:
+  push:
+    branches:
+        - main
+
+jobs:
+  build:
+    if: github.repository == 'v1ct0rj/PythonWeb'
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run script
+        run: python ./PythonWeb/remote_build.sh
+
+      - name: Comit and Push changes
+        uses: stefanzweifel/git-auto-commit-actions@v5
+        with:
+          commit_message: Update Static Build
+          commit_user_name: v1ct0rjs [GitHub Actions]
+          commit_user_mail: vmjimenezs02@educarex.es
+          commit_autor: v1ct0r <vmjimenes02@educares.es>
