@@ -3,9 +3,7 @@ from PythonWeb.styles.styles import *
 from PythonWeb.constants import *
 from PythonWeb.pages.index import index
 from PythonWeb.pages.english import eng
-
-class State(rx.State):
-    """Define your app state here."""
+from PythonWeb.api.api import hello
 
 app = rx.App(
     style=BASE_STYLE,
@@ -22,4 +20,4 @@ app = rx.App(
     ],
 )
 
-
+app.api.add_api_route("/hello", hello)
