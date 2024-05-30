@@ -1,7 +1,8 @@
 *.db
 *.py[cod]
+.env
 .idea/
 .venv/
+.web
 .web/
 __pycache__/
-.env
