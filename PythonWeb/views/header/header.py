@@ -9,7 +9,8 @@ from PythonWeb.styles.colors import Fonts as Fonts
 def header (titulo: str, header: str, country: str, contact: str) -> rx.Component:
     return rx.vstack(
         rx.hstack(
-        rx.avatar(name="Víctor Jiménez",
+        rx.avatar(
+                  name="Víctor Jiménez",
                   border_color=Color.CONTENT.value,
                   border_width='3px',
                   src="/avatar.png",

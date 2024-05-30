@@ -9,18 +9,19 @@ from PythonWeb.components.info_button import info_button
 import PythonWeb.utils as utils
 from PythonWeb.routes import Route
 from PythonWeb.components.ant_components import FloatButtonIdex as float_button_index
-
+from PythonWeb.state.PageState import PageState
 @rx.page(
     route=Route.ENG.value,
     title=TEXT_TAB_TITLE,
     description=utils.eng_description,
     image=utils.avatar,
-    meta=utils.eng_meta
+    meta=utils.eng_meta,
+    on_load=PageState.check_live
 )
 def eng() -> rx.Component:
     return rx.box(
         utils.lang(),
-        navbar(NAVBAR_ENG),
+        navbar(NAVBAR_ENG, live=PageState.is_live),
         rx.center(
             rx.vstack(
                 header(TEXT_ENG_TITULO, TEXT_ENG_HEADER, TEXT_ENG_COUNTRY, TEXT_ENG_CONTACT),
