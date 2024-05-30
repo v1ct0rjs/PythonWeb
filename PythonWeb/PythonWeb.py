@@ -3,7 +3,7 @@ from PythonWeb.styles.styles import *
 from PythonWeb.constants import *
 from PythonWeb.pages.index import index
 from PythonWeb.pages.english import eng
-from PythonWeb.api.api import hello
+from PythonWeb.api.api import repo, live
 
 app = rx.App(
     style=BASE_STYLE,
@@ -20,4 +20,5 @@ app = rx.App(
     ],
 )
 
-app.api.add_api_route("/hello", hello)
+app.api.add_api_route("/repo", repo)
+app.api.add_api_route("/live/{user}", live)
