@@ -16,24 +16,24 @@ import NextHead from "next/head"
 
 
 
-export function Link_21e95c96e633bc98f3fe0a94cf5a0945 () {
+export function Link_772629f05d9d913f9c155a0961897754 () {
 
 
 
   return (
     <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}, "width": "100%"}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://x.com/vmjimsan`} passHref={true}>
+  <NextLink href={`https://github.com/v1ct0rjs/DBOH`} passHref={true}>
   <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#000000", "backgroundColor": "#1dd3b0", "&:hover": {"backgroundColor": "#FFFFFF"}}}>
   <RadixThemesFlex align={`start`} className={`rx-Stack`} css={{"width": "100%", "alignItems": "start"}} direction={`row`} gap={`3`}>
   <RadixThemesBox>
-  <img alt={`Icono`} css={{"width": "2em", "height": "2em", "margin": "0.8em"}} src={`x-twitter.svg`}/>
+  <LucideCalculatorIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
 </RadixThemesBox>
   <RadixThemesFlex align={`start`} className={`rx-Stack`} direction={`column`} gap={`0`}>
   <RadixThemesText as={`p`} css={{"fontSize": "1.5em", "color": "#000000", "fontFamily": "JetBrains Mono"}}>
-  {`X`}
+  {`Conversor DBOH`}
 </RadixThemesText>
   <RadixThemesText as={`p`} css={{"fontSize": "1em", "color": "#086375", "fontFamily": "JetBrains Mono"}}>
-  {`Perfil de X`}
+  {`Conversor Decimal, Binario, Hexadecimal y Octal`}
 </RadixThemesText>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -70,6 +70,19 @@ export function Link_578391965dfcae26f49d28248432d06b () {
   )
 }
 
+export function Link_5f2591cb00d73926e4c02137cd62a91e () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://www.kernel.org/`} passHref={true}>
+  <img alt={`Logo de Tux, la mascota de Linux un pinguino`} css={{"width": "60px"}} src={`/Tux_Mono.png`}/>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
 export function Link_25b1b47921ef664ea3824bd8354d7fd5 () {
 
 
@@ -92,6 +105,59 @@ export function Link_25b1b47921ef664ea3824bd8354d7fd5 () {
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_f7b3566a63f30e7fed7fbd3852609c9b () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}, "width": "100%"}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://github.com/v1ct0rjs/Pyng`} passHref={true}>
+  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#000000", "backgroundColor": "#1dd3b0", "&:hover": {"backgroundColor": "#FFFFFF"}}}>
+  <RadixThemesFlex align={`start`} className={`rx-Stack`} css={{"width": "100%", "alignItems": "start"}} direction={`row`} gap={`3`}>
+  <RadixThemesBox>
+  <LucideNetworkIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
+</RadixThemesBox>
+  <RadixThemesFlex align={`start`} className={`rx-Stack`} direction={`column`} gap={`0`}>
+  <RadixThemesText as={`p`} css={{"fontSize": "1.5em", "color": "#000000", "fontFamily": "JetBrains Mono"}}>
+  {`Pyng`}
+</RadixThemesText>
+  <RadixThemesText as={`p`} css={{"fontSize": "1em", "color": "#086375", "fontFamily": "JetBrains Mono"}}>
+  {`Script detector de equipos en LAN`}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_57c13f28e4522652b9138412a74a24c8 () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`mailto:vmjimenezs02@educarex.es`} passHref={true}>
+  <LucideMailIcon css={{"color": "var(--current-color)"}} size={20}/>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_496773d6621d4a19167ba9dcd09641ba () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://reflex.dev/`} passHref={true}>
+  <img alt={`Logo de reflex`} css={{"width": "150px", "paddingLeft": "2em"}} src={`/Reflex_white.svg`}/>
 </NextLink>
 </RadixThemesLink>
   )
@@ -125,24 +191,24 @@ useEffect(() => {
   )
 }
 
-export function Link_679646143fd9774622a1ba053f4bc392 () {
+export function Link_010b2051dd44ee8e46902658b98e7215 () {
 
 
 
   return (
     <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}, "width": "100%"}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://github.com/v1ct0rjs/PyAgenda`} passHref={true}>
+  <NextLink href={`https://github.com/v1ct0rjs`} passHref={true}>
   <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#000000", "backgroundColor": "#1dd3b0", "&:hover": {"backgroundColor": "#FFFFFF"}}}>
   <RadixThemesFlex align={`start`} className={`rx-Stack`} css={{"width": "100%", "alignItems": "start"}} direction={`row`} gap={`3`}>
   <RadixThemesBox>
-  <LucideCalendarPlusIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
+  <LucideGithubIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
 </RadixThemesBox>
   <RadixThemesFlex align={`start`} className={`rx-Stack`} direction={`column`} gap={`0`}>
   <RadixThemesText as={`p`} css={{"fontSize": "1.5em", "color": "#000000", "fontFamily": "JetBrains Mono"}}>
-  {`PyAgenda`}
+  {`GitHub`}
 </RadixThemesText>
   <RadixThemesText as={`p`} css={{"fontSize": "1em", "color": "#086375", "fontFamily": "JetBrains Mono"}}>
-  {`Script, gestor de tareas CLI`}
+  {`Repositorios proyectos`}
 </RadixThemesText>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -152,47 +218,64 @@ export function Link_679646143fd9774622a1ba053f4bc392 () {
   )
 }
 
-export function Link_5f2591cb00d73926e4c02137cd62a91e () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://www.kernel.org/`} passHref={true}>
-  <img alt={`Logo de Tux, la mascota de Linux un pinguino`} css={{"width": "60px"}} src={`/Tux_Mono.png`}/>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
-
-
-export function Link_f7b3566a63f30e7fed7fbd3852609c9b () {
+export function Link_b144d8ebaf47cd31dc2c415b56d32b5f () {
 
 
 
   return (
     <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}, "width": "100%"}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://github.com/v1ct0rjs/Pyng`} passHref={true}>
+  <NextLink href={`https://github.com/v1ct0rjs/RuletaDeLaFortuna/`} passHref={true}>
   <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#000000", "backgroundColor": "#1dd3b0", "&:hover": {"backgroundColor": "#FFFFFF"}}}>
   <RadixThemesFlex align={`start`} className={`rx-Stack`} css={{"width": "100%", "alignItems": "start"}} direction={`row`} gap={`3`}>
   <RadixThemesBox>
-  <LucideNetworkIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
+  <LucideDicesIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
 </RadixThemesBox>
   <RadixThemesFlex align={`start`} className={`rx-Stack`} direction={`column`} gap={`0`}>
   <RadixThemesText as={`p`} css={{"fontSize": "1.5em", "color": "#000000", "fontFamily": "JetBrains Mono"}}>
-  {`Pyng`}
+  {`Ruleta de la fortuna`}
 </RadixThemesText>
   <RadixThemesText as={`p`} css={{"fontSize": "1em", "color": "#086375", "fontFamily": "JetBrains Mono"}}>
-  {`Script detector de equipos en LAN`}
+  {`Juego de la ruleta de la fortuna`}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_c6b78a03f473c36fec02965992b31cb7 () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://t.me/p3sc4`} passHref={true}>
+  <LucideSendIcon css={{"color": "var(--current-color)"}} size={20}/>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_c8a73496544fd011d1f1c95b736c3f74 () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}, "width": "100%"}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://www.linkedin.com/in/v%C3%ADctor-manuel-jim%C3%A9nez-s%C3%A1nchez-53286130b/`} passHref={true}>
+  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#000000", "backgroundColor": "#1dd3b0", "&:hover": {"backgroundColor": "#FFFFFF"}}}>
+  <RadixThemesFlex align={`start`} className={`rx-Stack`} css={{"width": "100%", "alignItems": "start"}} direction={`row`} gap={`3`}>
+  <RadixThemesBox>
+  <LucideLinkedinIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
+</RadixThemesBox>
+  <RadixThemesFlex align={`start`} className={`rx-Stack`} direction={`column`} gap={`0`}>
+  <RadixThemesText as={`p`} css={{"fontSize": "1.5em", "color": "#000000", "fontFamily": "JetBrains Mono"}}>
+  {`LinkedIn`}
+</RadixThemesText>
+  <RadixThemesText as={`p`} css={{"fontSize": "1em", "color": "#086375", "fontFamily": "JetBrains Mono"}}>
+  {`Perfil De LinkedIn`}
 </RadixThemesText>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -224,14 +307,68 @@ export function Fragment_312722142985dfbd0ef6b8c2e3e9e9e0 () {
   )
 }
 
-export function Link_496773d6621d4a19167ba9dcd09641ba () {
+export function Link_7d3c2e44ed7a09849b10248283ea7ca0 () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}, "width": "100%"}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://github.com/v1ct0rjs/PythonWeb`} passHref={true}>
+  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#000000", "backgroundColor": "#1dd3b0", "&:hover": {"backgroundColor": "#FFFFFF"}}}>
+  <RadixThemesFlex align={`start`} className={`rx-Stack`} css={{"width": "100%", "alignItems": "start"}} direction={`row`} gap={`3`}>
+  <RadixThemesBox>
+  <LucideAppWindowIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
+</RadixThemesBox>
+  <RadixThemesFlex align={`start`} className={`rx-Stack`} direction={`column`} gap={`0`}>
+  <RadixThemesText as={`p`} css={{"fontSize": "1.5em", "color": "#000000", "fontFamily": "JetBrains Mono"}}>
+  {`Python Web App`}
+</RadixThemesText>
+  <RadixThemesText as={`p`} css={{"fontSize": "1em", "color": "#086375", "fontFamily": "JetBrains Mono"}}>
+  {`Código de está web misma web programáda en Python`}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_679646143fd9774622a1ba053f4bc392 () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}, "width": "100%"}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://github.com/v1ct0rjs/PyAgenda`} passHref={true}>
+  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#000000", "backgroundColor": "#1dd3b0", "&:hover": {"backgroundColor": "#FFFFFF"}}}>
+  <RadixThemesFlex align={`start`} className={`rx-Stack`} css={{"width": "100%", "alignItems": "start"}} direction={`row`} gap={`3`}>
+  <RadixThemesBox>
+  <LucideCalendarPlusIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
+</RadixThemesBox>
+  <RadixThemesFlex align={`start`} className={`rx-Stack`} direction={`column`} gap={`0`}>
+  <RadixThemesText as={`p`} css={{"fontSize": "1.5em", "color": "#000000", "fontFamily": "JetBrains Mono"}}>
+  {`PyAgenda`}
+</RadixThemesText>
+  <RadixThemesText as={`p`} css={{"fontSize": "1em", "color": "#086375", "fontFamily": "JetBrains Mono"}}>
+  {`Script, gestor de tareas CLI`}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_a173df9d06ddc5bee952974c2694e72e () {
 
 
 
   return (
     <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://reflex.dev/`} passHref={true}>
-  <img alt={`Logo de reflex`} css={{"width": "150px", "paddingLeft": "2em"}} src={`/Reflex_white.svg`}/>
+  <NextLink href={`https://www.python.org/`} passHref={true}>
+  <img alt={`Logo de Python, dos serpientes entrelazadas`} css={{"width": "100px", "paddingRight": "2em"}} src={`/python.svg`}/>
 </NextLink>
 </RadixThemesLink>
   )
@@ -255,18 +392,42 @@ export function Fragment_cf53a535ae2e610a113dd361eb6ac95b () {
   )
 }
 
-export function Link_57c13f28e4522652b9138412a74a24c8 () {
+export function Link_1818ba7e5845132cf6a1d6ad124a67d0 () {
 
 
 
   return (
-    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`mailto:vmjimenezs02@educarex.es`} passHref={true}>
-  <LucideMailIcon css={{"color": "var(--current-color)"}} size={20}/>
+    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}, "width": "100%"}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://github.com/v1ct0rjs/pyther`} passHref={true}>
+  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#000000", "backgroundColor": "#1dd3b0", "&:hover": {"backgroundColor": "#FFFFFF"}}}>
+  <RadixThemesFlex align={`start`} className={`rx-Stack`} css={{"width": "100%", "alignItems": "start"}} direction={`row`} gap={`3`}>
+  <RadixThemesBox>
+  <LucideMessageSquareTextIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
+</RadixThemesBox>
+  <RadixThemesFlex align={`start`} className={`rx-Stack`} direction={`column`} gap={`0`}>
+  <RadixThemesText as={`p`} css={{"fontSize": "1.5em", "color": "#000000", "fontFamily": "JetBrains Mono"}}>
+  {`Pyter`}
+</RadixThemesText>
+  <RadixThemesText as={`p`} css={{"fontSize": "1em", "color": "#086375", "fontFamily": "JetBrains Mono"}}>
+  {`Pequeño programa de mensajeria cliente-servidor que usa gprc`}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesButton>
 </NextLink>
 </RadixThemesLink>
   )
 }
+
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
 
 export function Link_a53a80083926c2cd513842069579601a () {
 
@@ -307,86 +468,6 @@ export function Div_ac2a89ea84667d600a059f034bd91dfe () {
   )
 }
 
-export function Link_a173df9d06ddc5bee952974c2694e72e () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://www.python.org/`} passHref={true}>
-  <img alt={`Logo de Python, dos serpientes entrelazadas`} css={{"width": "100px", "paddingRight": "2em"}} src={`/python.svg`}/>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_c6b78a03f473c36fec02965992b31cb7 () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://t.me/p3sc4`} passHref={true}>
-  <LucideSendIcon css={{"color": "var(--current-color)"}} size={20}/>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_1818ba7e5845132cf6a1d6ad124a67d0 () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}, "width": "100%"}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://github.com/v1ct0rjs/pyther`} passHref={true}>
-  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#000000", "backgroundColor": "#1dd3b0", "&:hover": {"backgroundColor": "#FFFFFF"}}}>
-  <RadixThemesFlex align={`start`} className={`rx-Stack`} css={{"width": "100%", "alignItems": "start"}} direction={`row`} gap={`3`}>
-  <RadixThemesBox>
-  <LucideMessageSquareTextIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
-</RadixThemesBox>
-  <RadixThemesFlex align={`start`} className={`rx-Stack`} direction={`column`} gap={`0`}>
-  <RadixThemesText as={`p`} css={{"fontSize": "1.5em", "color": "#000000", "fontFamily": "JetBrains Mono"}}>
-  {`Pyter`}
-</RadixThemesText>
-  <RadixThemesText as={`p`} css={{"fontSize": "1em", "color": "#086375", "fontFamily": "JetBrains Mono"}}>
-  {`Pequeño programa de mensajeria cliente-servidor que usa gprc`}
-</RadixThemesText>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesButton>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_010b2051dd44ee8e46902658b98e7215 () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}, "width": "100%"}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://github.com/v1ct0rjs`} passHref={true}>
-  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#000000", "backgroundColor": "#1dd3b0", "&:hover": {"backgroundColor": "#FFFFFF"}}}>
-  <RadixThemesFlex align={`start`} className={`rx-Stack`} css={{"width": "100%", "alignItems": "start"}} direction={`row`} gap={`3`}>
-  <RadixThemesBox>
-  <LucideGithubIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
-</RadixThemesBox>
-  <RadixThemesFlex align={`start`} className={`rx-Stack`} direction={`column`} gap={`0`}>
-  <RadixThemesText as={`p`} css={{"fontSize": "1.5em", "color": "#000000", "fontFamily": "JetBrains Mono"}}>
-  {`GitHub`}
-</RadixThemesText>
-  <RadixThemesText as={`p`} css={{"fontSize": "1em", "color": "#086375", "fontFamily": "JetBrains Mono"}}>
-  {`Repositorios proyectos`}
-</RadixThemesText>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesButton>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
 export function Link_cdca847d0ebf4baa8ef46525bdaaa04f () {
 
 
@@ -414,105 +495,24 @@ export function Link_cdca847d0ebf4baa8ef46525bdaaa04f () {
   )
 }
 
-export function Link_c8a73496544fd011d1f1c95b736c3f74 () {
+export function Link_21e95c96e633bc98f3fe0a94cf5a0945 () {
 
 
 
   return (
     <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}, "width": "100%"}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://www.linkedin.com/in/v%C3%ADctor-manuel-jim%C3%A9nez-s%C3%A1nchez-53286130b/`} passHref={true}>
+  <NextLink href={`https://x.com/vmjimsan`} passHref={true}>
   <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#000000", "backgroundColor": "#1dd3b0", "&:hover": {"backgroundColor": "#FFFFFF"}}}>
   <RadixThemesFlex align={`start`} className={`rx-Stack`} css={{"width": "100%", "alignItems": "start"}} direction={`row`} gap={`3`}>
   <RadixThemesBox>
-  <LucideLinkedinIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
+  <img alt={`Icono`} css={{"width": "2em", "height": "2em", "margin": "0.8em"}} src={`x-twitter.svg`}/>
 </RadixThemesBox>
   <RadixThemesFlex align={`start`} className={`rx-Stack`} direction={`column`} gap={`0`}>
   <RadixThemesText as={`p`} css={{"fontSize": "1.5em", "color": "#000000", "fontFamily": "JetBrains Mono"}}>
-  {`LinkedIn`}
+  {`X`}
 </RadixThemesText>
   <RadixThemesText as={`p`} css={{"fontSize": "1em", "color": "#086375", "fontFamily": "JetBrains Mono"}}>
-  {`Perfil De LinkedIn`}
-</RadixThemesText>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesButton>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_772629f05d9d913f9c155a0961897754 () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}, "width": "100%"}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://github.com/v1ct0rjs/DBOH`} passHref={true}>
-  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#000000", "backgroundColor": "#1dd3b0", "&:hover": {"backgroundColor": "#FFFFFF"}}}>
-  <RadixThemesFlex align={`start`} className={`rx-Stack`} css={{"width": "100%", "alignItems": "start"}} direction={`row`} gap={`3`}>
-  <RadixThemesBox>
-  <LucideCalculatorIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
-</RadixThemesBox>
-  <RadixThemesFlex align={`start`} className={`rx-Stack`} direction={`column`} gap={`0`}>
-  <RadixThemesText as={`p`} css={{"fontSize": "1.5em", "color": "#000000", "fontFamily": "JetBrains Mono"}}>
-  {`Conversor DBOH`}
-</RadixThemesText>
-  <RadixThemesText as={`p`} css={{"fontSize": "1em", "color": "#086375", "fontFamily": "JetBrains Mono"}}>
-  {`Conversor Decimal, Binario, Hexadecimal y Octal`}
-</RadixThemesText>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesButton>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_b144d8ebaf47cd31dc2c415b56d32b5f () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}, "width": "100%"}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://github.com/v1ct0rjs/RuletaDeLaFortuna/`} passHref={true}>
-  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#000000", "backgroundColor": "#1dd3b0", "&:hover": {"backgroundColor": "#FFFFFF"}}}>
-  <RadixThemesFlex align={`start`} className={`rx-Stack`} css={{"width": "100%", "alignItems": "start"}} direction={`row`} gap={`3`}>
-  <RadixThemesBox>
-  <LucideDicesIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
-</RadixThemesBox>
-  <RadixThemesFlex align={`start`} className={`rx-Stack`} direction={`column`} gap={`0`}>
-  <RadixThemesText as={`p`} css={{"fontSize": "1.5em", "color": "#000000", "fontFamily": "JetBrains Mono"}}>
-  {`Ruleta de la fortuna`}
-</RadixThemesText>
-  <RadixThemesText as={`p`} css={{"fontSize": "1em", "color": "#086375", "fontFamily": "JetBrains Mono"}}>
-  {`Juego de la ruleta de la fortuna`}
-</RadixThemesText>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesButton>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_7d3c2e44ed7a09849b10248283ea7ca0 () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "color": "inherit", "&:hover": {"color": "var(--accent-8)"}, "width": "100%"}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://github.com/v1ct0rjs/PythonWeb`} passHref={true}>
-  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#000000", "backgroundColor": "#1dd3b0", "&:hover": {"backgroundColor": "#FFFFFF"}}}>
-  <RadixThemesFlex align={`start`} className={`rx-Stack`} css={{"width": "100%", "alignItems": "start"}} direction={`row`} gap={`3`}>
-  <RadixThemesBox>
-  <LucideAppWindowIcon css={{"width": "2em", "height": "2em", "margin": "0.8em", "color": "#000000"}}/>
-</RadixThemesBox>
-  <RadixThemesFlex align={`start`} className={`rx-Stack`} direction={`column`} gap={`0`}>
-  <RadixThemesText as={`p`} css={{"fontSize": "1.5em", "color": "#000000", "fontFamily": "JetBrains Mono"}}>
-  {`Python Web App`}
-</RadixThemesText>
-  <RadixThemesText as={`p`} css={{"fontSize": "1em", "color": "#086375", "fontFamily": "JetBrains Mono"}}>
-  {`Código de está web misma web programáda en Python`}
+  {`Perfil de X`}
 </RadixThemesText>
 </RadixThemesFlex>
 </RadixThemesFlex>
