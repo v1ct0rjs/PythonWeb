@@ -2,5 +2,6 @@
 *.py[cod]
 .idea/
 .venv/
-.web
+.web/
 __pycache__/
+.env
