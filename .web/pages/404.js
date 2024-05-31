@@ -26,6 +26,16 @@ export function Div_ac2a89ea84667d600a059f034bd91dfe () {
   )
 }
 
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+
 export function Fragment_cf53a535ae2e610a113dd361eb6ac95b () {
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -71,16 +81,6 @@ useEffect(() => {
     <Toaster closeButton={false} expand={true} position={`bottom-right`} richColors={true} theme={colorMode}/>
   )
 }
-
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
-
 
 export default function Component() {
   const routeNotFound = useClientSideRouting()
