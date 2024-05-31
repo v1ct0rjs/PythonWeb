@@ -14,6 +14,16 @@ import NextHead from "next/head"
 
 
 
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+
 export function Div_ac2a89ea84667d600a059f034bd91dfe () {
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -43,16 +53,6 @@ export function Fragment_cf53a535ae2e610a113dd361eb6ac95b () {
 </Fragment>
   )
 }
-
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
-
 
 export function Toaster_89416713a273995fc60191a4cf573054 () {
   const [ colorMode, toggleColorMode ] = useContext(ColorModeContext)
