@@ -14,23 +14,15 @@ import NextHead from "next/head"
 
 
 
-export function Fragment_cf53a535ae2e610a113dd361eb6ac95b () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
 
-
-
-  return (
-    <Fragment>
-  {isTrue(connectErrors.length > 0) ? (
-  <Fragment>
-  <LucideWifiOffIcon css={{"color": "crimson", "zIndex": 9999, "position": "fixed", "bottom": "33px", "right": "33px", "animation": `${pulse} 1s infinite`}} size={32}/>
-</Fragment>
-) : (
-  <Fragment/>
-)}
-</Fragment>
-  )
-}
 
 export function Div_ac2a89ea84667d600a059f034bd91dfe () {
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -72,15 +64,23 @@ useEffect(() => {
   )
 }
 
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
+export function Fragment_cf53a535ae2e610a113dd361eb6ac95b () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
 
+
+
+  return (
+    <Fragment>
+  {isTrue(connectErrors.length > 0) ? (
+  <Fragment>
+  <LucideWifiOffIcon css={{"color": "crimson", "zIndex": 9999, "position": "fixed", "bottom": "33px", "right": "33px", "animation": `${pulse} 1s infinite`}} size={32}/>
+</Fragment>
+) : (
+  <Fragment/>
+)}
+</Fragment>
+  )
+}
 
 export default function Component() {
   const routeNotFound = useClientSideRouting()
