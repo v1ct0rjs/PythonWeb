@@ -5,6 +5,6 @@ config = rx.Config(
     cors_allowed_origins=[
        "https://api.v1ct0r.dev",
        "http://localhost:3000",
-       #"https://www.v1ct0r.dev"
+       "https://www.v1ct0r.dev"
    ]
 )
