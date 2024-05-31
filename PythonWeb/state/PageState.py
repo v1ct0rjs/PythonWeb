@@ -1,7 +1,7 @@
 import reflex as rx
 from PythonWeb.api.api import live
 
-USER = "dj_10tacle"
+USER = "SirMaza"
 
 class PageState(rx.State):
     is_live: bool
