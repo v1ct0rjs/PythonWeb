@@ -2,6 +2,8 @@
 
 proyectos = [
     {"title": "GitHub", "subtitle": "Repositorios proyectos", "url": "https://github.com/v1ct0rjs", "icon": "github"},
+    {"title": "Python Web App", "subtitle": "Código de está web misma web programáda en Python",
+     "url": "https://github.com/v1ct0rjs/PythonWeb", "icon": "app-window"},
     {"title": "Pyter", "subtitle": "Pequeño programa de mensajeria cliente-servidor que usa gprc",
      "url": "https://github.com/v1ct0rjs/pyther", "icon": "message-square-text"},
     {"title": "Ruleta de la fortuna", "subtitle": "Juego de la ruleta de la fortuna",
@@ -16,8 +18,7 @@ proyectos = [
      "icon": "network"},
     {"title": "Conversor DBOH", "subtitle": "Conversor Decimal, Binario, Hexadecimal y Octal",
      "url": "https://github.com/v1ct0rjs/DBOH", "icon": "calculator"},
-    {"title": "Python Web App", "subtitle": "Código de está web misma web programáda en Python",
-     "url": "https://github.com/v1ct0rjs/PythonWeb", "icon": "app-window"},
+    {"title": "Shell Script Usuarios-Grupos", "subtitle": "Script, gestor de usuarios y grupos Bash", "url":"https://github.com/v1ct0rjs/iso_shell_scripts", "icon":"file-terminal"},
 ]
 enlaces = [
     {"title": "LinkedIn", "subtitle": "Perfil De LinkedIn",
@@ -36,6 +37,8 @@ certificados = [
 
 projects = [
     {"title": "GitHub", "subtitle": "Project repositories", "url": "https://github.com/v1ct0rjs", "icon": "github"},
+    {"title": "Python Web App", "subtitle": "Code of this same web programmed in Python",
+     "url": "https://github.com/v1ct0rjs/PythonWeb", "icon": "app-window"},
     {"title": "Pyter", "subtitle": "Small client-server messaging program that uses gprc",
      "url": "https://github.com/v1ct0rjs/pyther", "icon": "message-square-text"},
     {"title": "Wheel of Fortune", "subtitle": "Wheel of fortune game",
@@ -50,8 +53,7 @@ projects = [
      "icon": "network"},
     {"title": "DBOH Converter", "subtitle": "Decimal, Binary, Hexadecimal and Octal Converter",
      "url": "https://github.com/v1ct0rjs/DBOH", "icon": "calculator"},
-    {"title": "Python Web App", "subtitle": "Code of this same web programmed in Python",
-     "url": "https://github.com/v1ct0rjs/PythonWeb", "icon": "app-window"},
+    {"title": "Shell Script Users-Groups", "subtitle": "Script, Bash users and groups manager", "url":"https://github.com/v1ct0rjs/iso_shell_scripts", "icon":"file-terminal"},
 ]
 socials = [
     {"title": "LinkedIn", "subtitle": "LinkedIn Profile",
