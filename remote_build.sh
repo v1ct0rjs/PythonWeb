@@ -6,7 +6,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 rm -rf public
 reflex init
-API_URL=https://api.v1ct0r.dev/ reflex export --frontend-only
+API_URL=https://api.v1ct0r.dev reflex export --frontend-only
 unzip frontend.zip -d public
 rm -f frontend.zip
 deactivate
