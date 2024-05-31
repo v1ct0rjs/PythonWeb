@@ -14,6 +14,44 @@ import NextHead from "next/head"
 
 
 
+export function Toaster_89416713a273995fc60191a4cf573054 () {
+  const [ colorMode, toggleColorMode ] = useContext(ColorModeContext)
+
+
+  refs['__toast'] = toast
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+  
+const toast_props = {"description": `Check if server is reachable at ${getBackendURL(env.EVENT).href}`, "closeButton": true, "duration": 120000, "id": "websocket-error"};
+const [userDismissed, setUserDismissed] = useState(false);
+useEffect(() => {
+    if (connectErrors.length >= 2) {
+        if (!userDismissed) {
+            toast.error(
+                `Cannot connect to server: ${(connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''}.`,
+                {...toast_props, onDismiss: () => setUserDismissed(true)},
+            )
+        }
+    } else {
+        toast.dismiss("websocket-error");
+        setUserDismissed(false);  // after reconnection reset dismissed state
+    }
+}, [connectErrors]);
+
+  return (
+    <Toaster closeButton={false} expand={true} position={`bottom-right`} richColors={true} theme={colorMode}/>
+  )
+}
+
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+
 export function Div_ac2a89ea84667d600a059f034bd91dfe () {
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -41,44 +79,6 @@ export function Fragment_cf53a535ae2e610a113dd361eb6ac95b () {
   <Fragment/>
 )}
 </Fragment>
-  )
-}
-
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
-
-
-export function Toaster_89416713a273995fc60191a4cf573054 () {
-  const [ colorMode, toggleColorMode ] = useContext(ColorModeContext)
-
-
-  refs['__toast'] = toast
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-  
-const toast_props = {"description": `Check if server is reachable at ${getBackendURL(env.EVENT).href}`, "closeButton": true, "duration": 120000, "id": "websocket-error"};
-const [userDismissed, setUserDismissed] = useState(false);
-useEffect(() => {
-    if (connectErrors.length >= 2) {
-        if (!userDismissed) {
-            toast.error(
-                `Cannot connect to server: ${(connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''}.`,
-                {...toast_props, onDismiss: () => setUserDismissed(true)},
-            )
-        }
-    } else {
-        toast.dismiss("websocket-error");
-        setUserDismissed(false);  // after reconnection reset dismissed state
-    }
-}, [connectErrors]);
-
-  return (
-    <Toaster closeButton={false} expand={true} position={`bottom-right`} richColors={true} theme={colorMode}/>
   )
 }
 
