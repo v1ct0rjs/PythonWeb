@@ -5,5 +5,6 @@ TwitchAPI = TwitchAPI()
 async def repo() -> str:
     return constants.URL_GITHUB
 
-async def live(user: str) -> bool:
+async def live(user: str) -> dict:
+
     return TwitchAPI.live(user)

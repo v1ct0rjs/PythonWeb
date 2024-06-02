@@ -23,6 +23,7 @@ class Size(Enum):
 
 # Styles
 
+
 BASE_STYLE = {
     "background_color": Color.BACKGROUND.value,
     rx.button: {

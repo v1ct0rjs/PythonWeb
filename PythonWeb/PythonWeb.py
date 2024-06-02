@@ -7,7 +7,7 @@ from PythonWeb.api.api import repo, live
 
 app = rx.App(
     style=BASE_STYLE,
-    stylesheets=GFONTS,
+    stylesheets=STYLES_AND_FONTS,
     head_components=[
         rx.script(src=f"https://www.googletagmanager.com/gtag/js?id={GTAG}"),
         rx.script(

@@ -95,10 +95,11 @@ TEXT_ENG_COUNTRY = "Spain 🇪🇸"
 TEXT_ENG_CONTACT = "Contact: "
 # Fuentes de la página
 
-GFONTS = [
+STYLES_AND_FONTS = [
     "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap",
     "https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap",
-    "https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+    "https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap",
+    "/css/styles.css"
 ]
 
 GTAG = "G-QFHWGRCS3T"
