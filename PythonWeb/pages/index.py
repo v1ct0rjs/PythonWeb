@@ -28,7 +28,7 @@ def index() -> rx.Component:
         navbar(NAVBAR_ESP, live=PageState.is_live),
         rx.center(
             rx.vstack(
-                header(TEXTO_TITULO, TEXTO_HEADER, TEXTO_PAIS, TEXTO_CONTACTO),
+                header(TEXTO_TITULO, TEXTO_HEADER, TEXTO_PAIS, TEXTO_CONTACTO, PageState.is_live, PageState.live_tittle, "en directo"),
                 links('Mis Proyectos', proyectos),
                 info_button('Certificaciones', certificados),
                 links('Redes Sociales', enlaces),

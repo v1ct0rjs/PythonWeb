@@ -27,6 +27,7 @@ def navbar(text: str, live=False) -> rx.Component:
                         height=Size.XXLARGE.value,
                         margin_top='-10px',
                         margin_right=Size.MEDIUM.value,
+                        class_name="blink",
                     ),
                     href="https://www.twitch.tv/dj_10tacle",
                     is_external=True,

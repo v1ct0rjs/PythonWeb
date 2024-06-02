@@ -4,9 +4,10 @@ from PythonWeb.components.link_icon import link_icon
 from PythonWeb.components.info_text import info_text
 from PythonWeb.styles.colors import Colors as Color
 from PythonWeb.styles.colors import Fonts as Fonts
+from PythonWeb.components.info_button import *
 
 
-def header (titulo: str, header: str, country: str, contact: str) -> rx.Component:
+def header (titulo: str, header: str, country: str, contact: str, is_live: bool, info_title: str, cola: str) -> rx.Component:
     return rx.vstack(
         rx.hstack(
         rx.avatar(
@@ -44,6 +45,11 @@ def header (titulo: str, header: str, country: str, contact: str) -> rx.Componen
             ),
         ),
         spacing = '5'
+        ),
+        rx.cond(
+            is_live,
+            twitch_info_panel(cola, info_title, "/twitch_norm.svg", "Logo de Twitch"),
+
         ),
         rx.text(header,
                 font_size=Size.LARGE.value,

@@ -24,7 +24,7 @@ def eng() -> rx.Component:
         navbar(NAVBAR_ENG, live=PageState.is_live),
         rx.center(
             rx.vstack(
-                header(TEXT_ENG_TITULO, TEXT_ENG_HEADER, TEXT_ENG_COUNTRY, TEXT_ENG_CONTACT),
+                header(TEXT_ENG_TITULO, TEXT_ENG_HEADER, TEXT_ENG_COUNTRY, TEXT_ENG_CONTACT, PageState.is_live, PageState.live_tittle, "is in live"),
                 links('Projects', projects),
                 info_button('Certifications', certs),
                 links('Social Networks', socials),

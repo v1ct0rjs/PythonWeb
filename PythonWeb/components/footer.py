@@ -27,13 +27,14 @@ def footer() -> rx.Component:
                 href="https://reflex.dev/",
                 is_external=True
                 ),
-                align="center"
+                align="center",
             )
         ),
-        rx.text(f"2023 - {datetime.date.today().year} By Víctor Jiménez V1.3",
+        rx.text(f"2023 - {datetime.date.today().year} By Víctor Jiménez V1.4",
                 font_size=Size.LARGE.value),
         align="center",
         color=TextColor.CONTENT.value,
         background_color=Color.BACKGROUND.value,
         font_family=Fonts.JETBRAINS_MONO.value,
+        margin_bottom=Size.XLARGE.value,
     )
