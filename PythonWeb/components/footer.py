@@ -36,5 +36,4 @@ def footer() -> rx.Component:
         color=TextColor.CONTENT.value,
         background_color=Color.BACKGROUND.value,
         font_family=Fonts.JETBRAINS_MONO.value,
-        margin_bottom=Size.XLARGE.value,
     )
