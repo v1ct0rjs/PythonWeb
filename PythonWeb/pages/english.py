@@ -16,7 +16,7 @@ from PythonWeb.state.PageState import PageState
     description=utils.eng_description,
     image=utils.avatar,
     meta=utils.eng_meta,
-    on_load=PageState.check_live
+    on_load=[PageState.check_live, PageState.check_featured]
 )
 def eng() -> rx.Component:
     return rx.box(
