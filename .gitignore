@@ -3,6 +3,5 @@
 .env
 .idea/
 .venv/
-.web
 .web/
 __pycache__/
