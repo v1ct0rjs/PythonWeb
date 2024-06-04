@@ -9,7 +9,7 @@
   "dependencies": {
     "@emotion/react": "11.11.1",
     "@radix-ui/themes": "^3.0.0",
-    "antd": "^5.17.4",
+    "antd": "^5.18.0",
     "axios": "1.6.0",
     "json5": "2.2.3",
     "lucide-react": "0.359.0",
