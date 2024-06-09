@@ -21,10 +21,10 @@ from PythonWeb.state.PageState import PageState
 def eng() -> rx.Component:
     return rx.box(
         utils.lang(),
-        navbar(NAVBAR_ENG, live=PageState.is_live),
+        navbar(NAVBAR_ENG, live=PageState.live),
         rx.center(
             rx.vstack(
-                header(TEXT_ENG_TITULO, TEXT_ENG_HEADER, TEXT_ENG_COUNTRY, TEXT_ENG_CONTACT, PageState.is_live, PageState.live_tittle, "is in live"),
+                header(TEXT_ENG_TITULO, TEXT_ENG_HEADER, TEXT_ENG_COUNTRY, TEXT_ENG_CONTACT, "is in live", PageState.live),
                 links('Projects', projects),
                 info_button('Certifications', certs),
                 links('Social Networks', socials),

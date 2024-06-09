@@ -10,6 +10,7 @@ def info_button(titulo: str, enlaces: list) -> rx.Component:
         componentes.append(no_link_button(enlace['title'], enlace['subtitle']))
     return rx.vstack(*componentes, align="start", width="100%")
 
+
 def twitch_info_panel(titulo: str, info: str, img_path: str, alt='') -> rx.Component:
     return rx.box(
         rx.link(
@@ -23,7 +24,7 @@ def twitch_info_panel(titulo: str, info: str, img_path: str, alt='') -> rx.Compo
                 class_name="shake",
                 ),
                 rx.vstack(
-                    rx.text(f'{PageState.live_user} {titulo}',
+                    rx.text(f'{PageState.live.live_user} {titulo}',
                             style=button_title_style,
                             color=Color.PRIMARY.value,
                             margin_left=Size.MEDIUM.value
@@ -36,15 +37,12 @@ def twitch_info_panel(titulo: str, info: str, img_path: str, alt='') -> rx.Compo
                     spacing='0',
 
                     ),
-                href=f"https://www.twitch.tv/{PageState.live_user}",
+                href=f"https://www.twitch.tv/{PageState.live.live_user}",
                 is_external=True,
             ),
-            href=f"https://www.twitch.tv/{PageState.live_user}",
+            href=f"https://www.twitch.tv/{PageState.live.live_user}",
             is_external=True),
             width="100%",
             align_items="center",
         style=no_button_style,
     )
-
-def github_info():
-    pass

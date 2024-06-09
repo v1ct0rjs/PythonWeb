@@ -5,9 +5,9 @@ from PythonWeb.components.info_text import info_text
 from PythonWeb.styles.colors import Colors as Color
 from PythonWeb.styles.colors import Fonts as Fonts
 from PythonWeb.components.info_button import *
+from PythonWeb.model.Live import Live
 
-
-def header (titulo: str, header: str, country: str, contact: str, is_live: bool, info_title: str, cola: str) -> rx.Component:
+def header (titulo: str, header: str, country: str, contact: str, cola='', live=Live(is_live=False, live_tittle='', live_user='')) -> rx.Component:
     return rx.vstack(
         rx.hstack(
         rx.avatar(
@@ -47,8 +47,8 @@ def header (titulo: str, header: str, country: str, contact: str, is_live: bool,
         spacing = '5'
         ),
         rx.cond(
-            is_live,
-            twitch_info_panel(cola, info_title, "/twitch_norm.svg", "Logo de Twitch"),
+            live.is_live,
+            twitch_info_panel(cola, live.live_tittle, "/twitch_norm.svg", "Logo de Twitch"),
 
         ),
         rx.text(header,

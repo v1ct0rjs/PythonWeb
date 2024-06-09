@@ -3,10 +3,10 @@ import PythonWeb.styles.styles as styles
 from PythonWeb.styles.styles import Size
 from PythonWeb.styles.colors import Colors as Color
 from PythonWeb.routes import Route
-from PythonWeb.components.ant_components import float_button
+from PythonWeb.model.Live import Live
 
 
-def navbar(text: str, live=False) -> rx.Component:
+def navbar(text: str, live=Live(is_live=False, live_tittle='', live_user='')) -> rx.Component:
     return rx.hstack(
         rx.link(
             rx.text(text,
@@ -18,7 +18,7 @@ def navbar(text: str, live=False) -> rx.Component:
         ),
         rx.hstack(
             rx.cond(
-                live,
+                live.is_live,
                 rx.link(
                     rx.image(
                         src="/twitch.svg",
