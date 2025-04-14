@@ -12,7 +12,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      
+        with:
+          fetch-depth: 0
+
       # (Opcional) Instalar dependencias si las necesitas, por ejemplo para Python
       - name: Install dependencies
         run: |
@@ -37,4 +39,6 @@ jobs:
             -Dsonar.projectKey=PythonWeb \
             -Dsonar.sources=. \
             -Dsonar.host.url=$SONAR_HOST_URL \
-            -Dsonar.login=$SONAR_TOKEN
+            -Dsonar.token=$SONAR_TOKEN
+            -Dsonar.python.version=3.11
+
