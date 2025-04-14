@@ -22,9 +22,9 @@ jobs:
       # Descarga e instala sonar-scanner CLI (puedes elegir otra versión)
       - name: Setup Sonar Scanner
         run: |
-          wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-4.7.0.2747-linux.zip
-          unzip sonar-scanner-*.zip -d $HOME
-          mv $HOME/sonar-scanner-4.7.0.2747-linux $HOME/sonar-scanner
+          wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-7.1.0.4889-linux-x64.zip
+          unzip sonar-scanner-cli-7.1.0.4889-linux-x64.zip -d $HOME
+          mv $HOME/sonar-scanner-cli-7.1.0.4889-linux-x64 $HOME/sonar-scanner
           echo "$HOME/sonar-scanner/bin" >> $GITHUB_PATH
 
       # Ejecuta el análisis
