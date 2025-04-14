@@ -24,7 +24,7 @@ jobs:
         run: |
           wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-7.1.0.4889-linux-x64.zip
           unzip sonar-scanner-cli-7.1.0.4889-linux-x64.zip -d $HOME
-          mv $HOME/sonar-scanner-cli-7.1.0.4889-linux-x64 $HOME/sonar-scanner
+          mv /home/runner/sonar-scanner-7.1.0.4889-linux-x64 /home/runner/sonar-scanner
           echo "$HOME/sonar-scanner/bin" >> $GITHUB_PATH
 
       # Ejecuta el análisis
