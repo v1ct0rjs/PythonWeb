@@ -30,7 +30,7 @@ jobs:
       # Ejecuta el análisis
       - name: SonarQube Analysis
         env:
-          SONAR_HOST_URL: https://xxxx-xxxx-1234.ngrok-free.app  # <-- tu URL de ngrok
+          SONAR_HOST_URL: https://9e61-83-61-29-35.ngrok-free.app  # <-- tu URL de ngrok
           SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
         run: |
           sonar-scanner \
