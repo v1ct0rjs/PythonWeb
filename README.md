@@ -1,26 +1,25 @@
 # V1cT0r's Python Web Application - Portfolio
 
-1. **Reflex Framework**: Reflex is a Python framework for building web applications. It provides a set of components and utilities that allow developers to create interactive user interfaces in Python. Reflex uses a reactive programming model, which means that the UI automatically updates in response to changes in the application's state.
+1. **Reflex Framework**
+    Reflex is a Python framework for building web applications. It provides a set of components and utilities that allow developers to create interactive user interfaces in Python. Reflex uses a reactive programming model, meaning the UI automatically updates in response to changes in the application’s state.
+2. **Application Structure**
+    The application is organized into multiple Python files, each serving a specific role. The main entry point is `PythonWeb.py`, which sets up the application and adds the main page.
+3. **SonarQube Integration**
+    This project has been analyzed with **SonarQube**, enabling thorough **verification and testing of the code** to ensure quality and detect potential vulnerabilities or defects. As a result of this analysis, it meets recommended quality standards, enhancing code robustness and maintainability.
+4. **Components**
+    The application uses several custom components defined in the `PythonWeb/components` directory. These include `link_button`, `navbar`, `footer`, and `title`. Each component is a function that returns a Reflex component—ranging from simple text or images to more complex elements like buttons or layout containers.
+5. **Views**
+    The application’s views are located in the `PythonWeb/views` directory. They rely on the custom components to build different parts of the UI. For instance, the `header` view creates the application’s header, while the `links` view produces a list of links.
+6. **Constants**
+    The `constants.py` file houses application data, such as a list of projects and links. These data are used by the views to dynamically populate the UI.
+7. **Styles**
+    The `styles.py` file contains the styles for the application. These styles are applied to the components and views to maintain a consistent visual design.
+8. **Running the Application**
+   - When the application starts, a `rx.App` instance is created.
+   - The main page is added to this instance.
+   - The main page function, which returns a Reflex component representing the entire page, is invoked.
+   - The views and components use the data from `constants.py` to populate the UI.
+   - The application is then compiled, and the UI is displayed to the user.
+   - When a user interacts with the UI, the application’s state changes, and the UI automatically updates to reflect those changes.
 
-2. **Application Structure**: The application is structured into several Python files, each serving a specific purpose. The main entry point of the application is `PythonWeb.py`, which sets up the application and adds the main page.
-
-3. **Components**: The application uses several custom components defined in the `PythonWeb/components` directory. These components include `link_button`, `navbar`, `footer`, and `title`. Each of these components is a function that returns a Reflex component, which can be a simple element like a text or image, or a more complex element like a button or a layout container.
-
-4. **Views**: The views of the application are defined in the `PythonWeb/views` directory. These views use the custom components to create the different parts of the application's UI. For example, the `header` view creates the header of the application, and the `links` view creates a list of links.
-
-5. **Constants**: The `constants.py` file contains the data for the application, such as the list of projects and links. This data is used by the views to populate the UI.
-
-6. **Styles**: The `styles.py` file contains the styles for the application. These styles are used by the components to style the UI.
-
-7. **Running the Application**: When the application is run, it creates an instance of the `rx.App` class, adds the main page to it, and then compiles the application. The main page is a function that returns a Reflex component representing the entire page. This function uses the views and components to create the page's UI.
-
-Here's a simplified flow of how the application works:
-
-1. The application is started and the `rx.App` instance is created.
-2. The main page is added to the application.
-3. The main page function is called, which creates the page's UI using the views and components.
-4. The views and components use the data from `constants.py` to populate the UI.
-5. The application is compiled and the UI is displayed to the user.
-6. When the user interacts with the UI, the application's state changes, and the UI automatically updates to reflect these changes.
-
-This is a high-level overview of how the application works. The actual details may vary depending on the specific requirements of the application.
+This is a high-level overview of how the application works. The specific details may vary according to the project’s requirements, but by combining Reflex, custom components, and the SonarQube quality checks, you gain a robust, reliable, and maintainable development environment.
