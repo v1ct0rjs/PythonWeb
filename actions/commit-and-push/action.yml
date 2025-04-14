@@ -22,6 +22,10 @@ runs:
       shell: bash
       run: |
         git add .
+        if git diff --cached --quiet; then
+          echo "No hay cambios para commitear. Saliendo sin error."
+          exit 0
+        fi
         git commit -m "${{ inputs.commit_message }}"
     - name: Push changes
       shell: bash
