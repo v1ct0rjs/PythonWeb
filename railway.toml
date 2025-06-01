@@ -1,6 +1,6 @@
 [build]
 builder = "dockerfile"
-dockerfilePath = "Dockerfile.backend"
+dockerfilePath = "Dockerfile"
 
 [deploy]
 healthcheckPath = "/ping"
@@ -9,3 +9,4 @@ restartPolicyType = "on_failure"
 
 [env]
 REFLEX_ENV = "prod"
+
