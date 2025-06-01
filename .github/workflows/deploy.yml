@@ -18,8 +18,11 @@ jobs:
       - name: Deploy to Railway
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID }} # Esta línea es crucial
+          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID }} # CRUCIAL: Asegúrate que esta variable se pasa al entorno del script
         run: |
-          # La autenticación con RAILWAY_TOKEN es automática.
-          # La CLI usará RAILWAY_PROJECT_ID para seleccionar el proyecto.
+          echo "Attempting to deploy to project ID: $RAILWAY_PROJECT_ID" # Línea de depuración
+          if [ -z "$RAILWAY_PROJECT_ID" ]; then
+            echo "Error: RAILWAY_PROJECT_ID is not set."
+            exit 1
+          fi
           railway up --detach
