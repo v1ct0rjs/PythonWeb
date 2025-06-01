@@ -19,5 +19,5 @@ jobs:
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
         run: |
-          railway login --token $RAILWAY_TOKEN
+          # La autenticación ahora se maneja automáticamente si RAILWAY_TOKEN está presente
           railway up --detach
