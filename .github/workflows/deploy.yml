@@ -1,70 +1,25 @@
-name: Deploy to Production or Preview
+name: Deploy to Production
 
 on:
   push:
-    branches:
-      - main # Para producción en Railway (manejado por Railway) y frontend en Vercel
-      - 'feat/**' # Ejemplo para ramas de feature (desplegar a preview en Railway)
-  pull_request:
-    types: [opened, synchronize]
+    branches: [ main ]
 
 jobs:
-  # Job para desplegar el frontend a Vercel (ejemplo)
-  deploy-frontend-vercel:
-    if: github.ref == 'refs/heads/main' # Solo para main
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      # ... pasos para construir y desplegar a Vercel ...
-      - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v20 # Ejemplo de una acción de Vercel
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_FRONTEND }} # ID del proyecto de Vercel para el frontend
-          vercel-args: '--prod'
-
-  # Job para desplegar a un entorno de PREVIEW en Railway (si lo necesitas)
-  # Railway ya maneja el deploy de 'main' a producción automáticamente.
-  deploy-backend-preview-railway:
-    if: startsWith(github.ref, 'refs/heads/feat/') || github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Install Railway CLI
-        run: |
-          curl -fsSL https://railway.app/install.sh | sh
-
-      - name: Deploy to Railway Preview Environment
-        env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-          # RAILWAY_PROJECT_ID es inferido por la vinculación o puede ser seteado si tienes múltiples proyectos
-          # RAILWAY_ENVIRONMENT_NAME: ${{ github.head_ref || github.ref_name }} # Nombre dinámico para el entorno
-        run: |
-          # El token de cuenta debería ser suficiente si el repo está vinculado.
-          # Puedes especificar un entorno si usas entornos de Railway.
-          # railway up --detach --environment "pr-${{ github.event.number }}" # Ejemplo para PRs
-          railway up --detach # Intentará desplegar al entorno por defecto o al vinculado
-
   deploy-backend:
-    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
+      
       - name: Install Railway CLI
         run: |
           curl -fsSL https://railway.app/install.sh | sh
-
+      
       - name: Deploy to Railway
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID }} # Asegúrate de que esta variable de entorno esté disponible
+          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID }} # Esta línea es crucial
         run: |
           # La autenticación con RAILWAY_TOKEN es automática.
-          # La CLI debería usar RAILWAY_PROJECT_ID automáticamente si está seteada.
+          # La CLI usará RAILWAY_PROJECT_ID para seleccionar el proyecto.
           railway up --detach
