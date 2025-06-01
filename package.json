@@ -1,0 +1,8 @@
+{
+  "name": "pythonweb-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Build handled by vercel.json'"
+  },
+  "devDependencies": {}
+}
