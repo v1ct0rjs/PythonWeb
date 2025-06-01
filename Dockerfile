@@ -1,30 +1,43 @@
-FROM python:3.11-slim
+#!/bin/bash
 
-WORKDIR /app
+echo "🔄 Sincronizando con repositorio remoto..."
 
-# Instalar dependencias del sistema
-RUN apt-get update && apt-get install -y \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
+# Hacer backup de cambios locales
+echo "💾 Haciendo backup de cambios locales..."
+git stash push -m "Backup automático $(date)"
 
-# Copiar archivos de dependencias
-COPY requirements.txt .
+# Traer cambios remotos
+echo "⬇️ Descargando cambios remotos..."
+git pull origin main
 
-# Crear y activar entorno virtual
-ENV VIRTUAL_ENV=/app/.venv_docker
-ENV PATH="$VIRTUAL_ENV/bin:$PATH"
-RUN python3.11 -m venv $VIRTUAL_ENV
+# Restaurar cambios locales
+echo "🔄 Restaurando cambios locales..."
+if git stash list | grep -q "Backup automático"; then
+    git stash pop
+fi
 
-# Instalar dependencias Python
-RUN pip install --upgrade pip
-RUN pip install --no-cache-dir -r requirements.txt
+# Verificar si hay conflictos
+if git status --porcelain | grep -q "^UU\|^AA\|^DD"; then
+    echo "⚠️ HAY CONFLICTOS - Resuélvelos manualmente:"
+    git status
+    echo "Después ejecuta:"
+    echo "  git add ."
+    echo "  git commit -m 'Resuelve conflictos'"
+    echo "  git push origin main"
+else
+    echo "✅ No hay conflictos"
 
-# Copiar código de la aplicación
-COPY . .
+    # Si hay cambios, commitear y pushear
+    if ! git diff --quiet || ! git diff --cached --quiet; then
+        echo "📝 Commiteando cambios..."
+        git add .
+        git commit -m "Actualización automática: $(date)"
 
-# Exponer puerto
-EXPOSE 8000
+        echo "🚀 Pusheando a remoto..."
+        git push origin main
 
-# Comando para producción
-CMD ["reflex", "run", "--env", "prod", "--backend-only", "--backend-port", "8000"]
-
+        echo "✅ ¡Listo! Cambios sincronizados"
+    else
+        echo "ℹ️ No hay cambios para commitear"
+    fi
+fi
