@@ -18,6 +18,8 @@ jobs:
       - name: Deploy to Railway
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID }} # Añadido el Project ID
         run: |
-          # La autenticación ahora se maneja automáticamente si RAILWAY_TOKEN está presente
-          railway up --detach
+          # La autenticación con RAILWAY_TOKEN es automática
+          # Especificamos el proyecto al que hacer deploy
+          railway up --project $RAILWAY_PROJECT_ID --detach

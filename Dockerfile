@@ -1,43 +1,30 @@
-#!/bin/bash
+FROM python:3.11-slim
 
-echo "🔄 Sincronizando con repositorio remoto..."
+WORKDIR /app
 
-# Hacer backup de cambios locales
-echo "💾 Haciendo backup de cambios locales..."
-git stash push -m "Backup automático $(date)"
+# Instalar dependencias del sistema
+RUN apt-get update && apt-get install -y \
+curl \
+build-essential \
+unzip \
+&& rm -rf /var/lib/apt/lists/*
 
-# Traer cambios remotos
-echo "⬇️ Descargando cambios remotos..."
-git pull origin main
+# Copiar archivos de dependencias
+COPY requirements.txt .
 
-# Restaurar cambios locales
-echo "🔄 Restaurando cambios locales..."
-if git stash list | grep -q "Backup automático"; then
-    git stash pop
-fi
+# Instalar dependencias Python
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Verificar si hay conflictos
-if git status --porcelain | grep -q "^UU\|^AA\|^DD"; then
-    echo "⚠️ HAY CONFLICTOS - Resuélvelos manualmente:"
-    git status
-    echo "Después ejecuta:"
-    echo "  git add ."
-    echo "  git commit -m 'Resuelve conflictos'"
-    echo "  git push origin main"
-else
-    echo "✅ No hay conflictos"
+# Copiar código de la aplicación
+COPY . .
 
-    # Si hay cambios, commitear y pushear
-    if ! git diff --quiet || ! git diff --cached --quiet; then
-        echo "📝 Commiteando cambios..."
-        git add .
-        git commit -m "Actualización automática: $(date)"
+# Inicializar Reflex
+RUN reflex init
 
-        echo "🚀 Pusheando a remoto..."
-        git push origin main
+# Exponer puerto (Railway usa PORT env var)
+EXPOSE $PORT
 
-        echo "✅ ¡Listo! Cambios sincronizados"
-    else
-        echo "ℹ️ No hay cambios para commitear"
-    fi
-fi
+# Comando para producción - ajustado para Railway
+CMD reflex run --env prod --backend-only --backend-port ${PORT:-8000} --backend-host 0.0.0.0
+
