@@ -5,15 +5,11 @@ WORKDIR /app
 # Instalar dependencias del sistema
 RUN apt-get update && apt-get install -y \
     curl \
+    build-essential \
     && rm -rf /var/lib/apt/lists/*
 
 # Copiar archivos de dependencias
 COPY requirements.txt .
-
-# Crear y activar entorno virtual
-ENV VIRTUAL_ENV=/app/.venv_docker
-ENV PATH="$VIRTUAL_ENV/bin:$PATH"
-RUN python3.11 -m venv $VIRTUAL_ENV
 
 # Instalar dependencias Python
 RUN pip install --upgrade pip
@@ -22,9 +18,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copiar código de la aplicación
 COPY . .
 
-# Exponer puerto
-EXPOSE 8000
+# Exponer puerto (Railway usa PORT env var)
+EXPOSE $PORT
 
-# Comando para producción
-CMD ["reflex", "run", "--env", "prod", "--backend-only", "--backend-port", "8000"]
+# Inicializar Reflex
+RUN reflex init
 
+# Comando para producción - solo backend
+CMD reflex run --env prod --backend-only --backend-port $PORT --backend-host 0.0.0.0

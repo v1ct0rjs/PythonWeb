@@ -1,0 +1,42 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Deploy to Railway
+        uses: railway-app/railway-action@v1
+        with:
+          api_token: ${{ secrets.RAILWAY_TOKEN }}
+          dockerfile: Dockerfile.backend
+
+  deploy-frontend:
+    needs: deploy-backend
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Build Frontend
+        run: |
+          pip install -r requirements.txt
+          reflex init
+          REFLEX_ENV=prod API_URL=https://pythonweb-backend-production.up.railway.app reflex export --frontend-only
+          unzip frontend.zip -d public
+
+      - name: Deploy to Vercel
+        uses: vercel/action@v1
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
