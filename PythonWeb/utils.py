@@ -3,7 +3,9 @@ from PythonWeb.constants import *
 
 
 def lang() -> rx.Component:
-    return rx.script("document.documentElement.lang = 'es'")
+    return rx.script(
+        "document.documentElement.lang = 'es'; document.cookie = 'backend-enabled=false'"
+    )
 
 
 # Common
