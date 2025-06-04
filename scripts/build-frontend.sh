@@ -2,7 +2,8 @@
 
 echo "🔧 Configurando variables de entorno..."
 export REFLEX_ENV=${REFLEX_ENV:-prod}
-export API_URL=${API_URL:-https://pythonweb-backend-production.up.railway.app}
+# API_URL ya no es necesaria aquí si rxconfig.py lo maneja
+# export API_URL=${API_URL:-https://pythonweb-backend-production.up.railway.app}
 
 echo "📦 Instalando dependencias..."
 python3 -m pip install -r requirements.txt
@@ -10,11 +11,12 @@ python3 -m pip install -r requirements.txt
 echo "🚀 Inicializando Reflex..."
 reflex init
 
-echo "🏗️ Building frontend con API_URL: $API_URL"
+echo "🏗️ Building frontend..."
 reflex export --frontend-only
 
 echo "📁 Extrayendo archivos..."
 unzip frontend.zip -d public
 
 echo "✅ Build completado!"
-echo "🔗 Frontend configurado para conectar a: $API_URL"
+# echo "🔗 Frontend configurado para conectar a: $API_URL" # Mensaje ya no relevante
+

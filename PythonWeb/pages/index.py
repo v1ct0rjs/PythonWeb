@@ -20,7 +20,7 @@ from PythonWeb.state.PageState import PageState
     description=TEXTO_HEADER,
     image=utils.avatar,
     meta=utils.index_meta,
-    on_load=[PageState.check_live, PageState.check_featured]
+    #on_load=[PageState.check_live, PageState.check_featured]
 )
 def index() -> rx.Component:
     return rx.box(
