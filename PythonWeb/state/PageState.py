@@ -9,12 +9,12 @@ class PageState(rx.State):
     live_user: str
     featured_data: list
 
-    async def check_live(self):
-        live_data = await live(USER)
-        self.is_live = live_data["live"]
-        self.live_user = live_data["user"]
-        self.live_tittle = live_data["title"]
-
-
-    async def check_featured(self):
-        self.featured_data = await featured()
+    # async def check_live(self):
+    #     live_data = await live(USER)
+    #     self.is_live = live_data["live"]
+    #     self.live_user = live_data["user"]
+    #     self.live_tittle = live_data["title"]
+    #
+    #
+    # async def check_featured(self):
+    #     self.featured_data = await featured()
