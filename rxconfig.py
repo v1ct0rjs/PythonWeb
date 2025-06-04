@@ -1,11 +1,7 @@
 import reflex as rx
 import os
 
-# Configuración para diferentes entornos
-def get_api_url():
-  # Como no hay backend, retornamos una cadena vacía o None.
-  # Una cadena vacía suele ser segura para `reflex export`.
-  return ""
+
 
 config = rx.Config(
   app_name="PythonWeb",
