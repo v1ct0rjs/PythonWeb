@@ -37,7 +37,7 @@ def index() -> rx.Component:
                 max_width=MAX_WIDTH,
                 spacing='6',
             ),
-            widht="100%",
+            width="100%",
             margin_y=Size.XLARGE,
         ),
         footer()
