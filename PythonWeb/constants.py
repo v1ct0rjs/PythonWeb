@@ -95,7 +95,7 @@ URL_MAPS = ""
 TEXT_TAB_TITLE = "V1cT0r's Portfolio"
 TEXTO_TITULO = "Desarrollador, Pythonista 🐍 y Linuxero 🐧"
 TEXTO_HEADER = """Hola, soy un desarrollador entusiasta con un sólido conocimiento en Python, HTML, C️, electrónica, desplieges, redes y servidores.
-He programado para proyectos de domótica 🛠️ y ahora estoy expandiendo mis horizontes hacia el desarrollo frontend ."""
+He programado para proyectos de domótica y ahora estoy expandiendo mis horizontes hacia el desarrollo frontend ."""
 TEXTO_PAIS = "España"
 TEXTO_CONTACTO = ""
 
