@@ -97,7 +97,7 @@ TEXTO_TITULO = "Desarrollador, Pythonista 🐍 y Linuxero 🐧"
 TEXTO_HEADER = """Hola 👋, soy un desarrollador entusiasta 😊 con un sólido conocimiento en Python 🐍, HTML 🌐, C 🖥️, electrónica 🔌 y servidores 💾.
 He programado para proyectos de domótica 🛠️ y ahora estoy expandiendo mis horizontes hacia el desarrollo frontend 🎨."""
 TEXTO_PAIS = "España 🇪🇸"
-TEXTO_CONTACTO = "Contacto: "
+TEXTO_CONTACTO = ""
 
 TEXT_ENG_HEADER = """Hello 👋, I am an enthusiastic developer 😊 with a solid knowledge in Python 🐍, HTML 🌐, C 🖥️, electronics 🔌, and servers 💾.
 I have programmed for home automation projects 🛠️ and now I am expanding my horizons towards frontend development 🎨."""
