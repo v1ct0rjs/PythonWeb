@@ -15,7 +15,7 @@ proyectos = [
      "url": "https://github.com/v1ct0rjs/oci-autonomousdb", "icon": "database"},
     {"title": "Python Web App", "subtitle": "Código de está web app programáda con Reflex",
      "url": "https://github.com/v1ct0rjs/PythonWeb", "icon": "app-window"},
-    {"title": "Auto Fastfetch", "subtitle": "Script en Python que descarga y ejecuta Fastfetch automáticamente para mostrar información del sistema rápidamente.",
+    {"title": "Auto Fastfetch", "subtitle": "Script en Python que descarga y ejecuta Fastfetch automático.",
      "url": "https://github.com/v1ct0rjs/auto_fastfetch", "icon": "terminal"},
     {"title": "Pyter", "subtitle": "Pequeño programa de mensajeria cliente-servidor que usa gprc",
      "url": "https://github.com/v1ct0rjs/pyther", "icon": "message-square-text"},
