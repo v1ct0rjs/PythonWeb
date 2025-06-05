@@ -2,8 +2,21 @@
 
 proyectos = [
     {"title": "GitHub", "subtitle": "Repositorios proyectos", "url": "https://github.com/v1ct0rjs", "icon": "github"},
-    {"title": "Python Web App", "subtitle": "Código de está web misma web programáda en Python",
+    {"title": "LoRaIM", "subtitle": "LoRaIM (LoRa Instant Messenger) es una plataforma utilizando LoRa (Long Range Radio).",
+     "url": "https://github.com/v1ct0rjs/LoRaIM", "icon": "antenna-bars-5"},
+    {"title": "Grafana Octopus", "subtitle": "Stack de Monitoreo con Grafana, InfluxDB 2 y Telegraf (Docker Compose)",
+     "url": "https://github.com/v1ct0rjs/grafana_octopus", "icon": "chart-bar-3"},
+    {"title": "Jenkins Deployment", "subtitle": "Automatización CD/CI de contenedores hacia DockerHub utilizando Jenkins.",
+     "url": "https://github.com/v1ct0rjs/jenkins_deployment", "icon": "rocket-launch"},
+    {"title": "Integración SonarQube",
+     "subtitle": "Implementación de una instancia pública de SonarQube utilizando Ngrok para facilitar el acceso externo.",
+     "url": "https://github.com/v1ct0rjs/jenkins_deployment/tree/main/SonarQube", "icon": "code-slash"},
+    {"title": "OC Db autonoma", "subtitle": "Creación de una base de datos autónoma en Oracle Cloud Infrastructure mediante Terraform.",
+     "url": "https://github.com/v1ct0rjs/oci-autonomousdb", "icon": "database"},
+    {"title": "Python Web App", "subtitle": "Código de está web app programáda con Reflex",
      "url": "https://github.com/v1ct0rjs/PythonWeb", "icon": "app-window"},
+    {"title": "Auto Fastfetch", "subtitle": "Script en Python que descarga y ejecuta Fastfetch automáticamente para mostrar información del sistema rápidamente.",
+     "url": "https://github.com/v1ct0rjs/auto_fastfetch", "icon": "terminal"},
     {"title": "Pyter", "subtitle": "Pequeño programa de mensajeria cliente-servidor que usa gprc",
      "url": "https://github.com/v1ct0rjs/pyther", "icon": "message-square-text"},
     {"title": "Ruleta de la fortuna", "subtitle": "Juego de la ruleta de la fortuna",
@@ -18,17 +31,16 @@ proyectos = [
      "icon": "network"},
     {"title": "Conversor DBOH", "subtitle": "Conversor Decimal, Binario, Hexadecimal y Octal",
      "url": "https://github.com/v1ct0rjs/DBOH", "icon": "calculator"},
-    {"title": "Shell Script Usuarios-Grupos", "subtitle": "Script, gestor de usuarios y grupos Bash", "url":"https://github.com/v1ct0rjs/iso_shell_scripts", "icon":"file-terminal"},
+    {"title": "Shell Script Usuarios-Grupos", "subtitle": "Script, gestor de usuarios y grupos Bash",
+     "url":"https://github.com/v1ct0rjs/iso_shell_scripts", "icon":"file-terminal"},
 ]
 enlaces = [
     {"title": "LinkedIn", "subtitle": "Perfil De LinkedIn",
-     "url": "https://www.linkedin.com/in/v%C3%ADctor-manuel-jim%C3%A9nez-s%C3%A1nchez-53286130b/", "icon": "linkedin"},
+     "url": "https://www.linkedin.com/in/v1ct0rdev/", "icon": "linkedin"},
     {"title": "X", "subtitle": "Perfil de X", "url": "https://x.com/vmjimsan", "icon": "twitter",
      "icon_path": "x-twitter.svg"},
     {"title": "Mastodon", "subtitle": "Perfil de Mastodon", "url": "https://mastodon.social/@v1ct0rjs",
      "icon": "twitter", "icon_path": "mastodon.svg"},
-    {"title": "Instagram", "subtitle": "Perfil De Instagram", "url": "https://www.instagram.com/dj_10tacle/",
-     "icon": "instagram"},
 ]
 
 certificados = [
