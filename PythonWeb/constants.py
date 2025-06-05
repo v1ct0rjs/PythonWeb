@@ -10,7 +10,7 @@ proyectos = [
      "url": "https://github.com/v1ct0rjs/jenkins_deployment", "icon": "rocket-launch"},
     {"title": "Integración SonarQube",
      "subtitle": "Instancia pública de SonarQube utilizando un tunel Ngrok.",
-     "url": "https://github.com/v1ct0rjs/jenkins_deployment/tree/main/SonarQube", "icon": "code-slash"},
+     "url": "https://github.com/v1ct0rjs/jenkins_deployment/tree/main/SonarQube", "icon": "SiDocker"},
     {"title": "OC Db autonoma", "subtitle": "Base de datos autónoma en Oracle Cloud Infrastructure.",
      "url": "https://github.com/v1ct0rjs/oci-autonomousdb", "icon": "database"},
     {"title": "Python Web App", "subtitle": "Código de está web app programáda con Reflex",
@@ -74,8 +74,6 @@ socials = [
      "icon_path": "/x-twitter.svg"},
     {"title": "Mastodon", "subtitle": "Mastodon Profile", "url": "https://mastodon.social/@v1ct0rjs",
      "icon": "twitter", "icon_path": "/mastodon.svg"},
-    {"title": "Instagram", "subtitle": "Instagram Profile", "url": "https://www.instagram.com/dj_10tacle/",
-     "icon": "instagram"},
 ]
 
 certs = [
