@@ -1,2 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>SonarQube icon</title><path d="M15.685.386l-.465.766c3.477 2.112 6.305 5.27 7.966 8.89L24 9.67C22.266 5.887 19.313 2.59 15.685.386zM8.462.91l-.305 1.075c6.89 1.976 12.384 7.64 13.997 14.421l1.085-.258C21.535 8.977 15.735 2.997 8.462.909zM0 2.667v1.342c10.963 0 19.883 8.795 19.883 19.605h1.342c0-11.55-9.522-20.947-21.225-20.947z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   width="806.39703"
+   height="780.79517"
+   viewBox="0 0 32.255881 31.231807"
+   version="1.1"
+   id="svg260"
+   sodipodi:docname="jenkins.svg"
+   xml:space="preserve"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs264" /><sodipodi:namedview
+     id="namedview262"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false" /><g
+     style="fill:#000000;stroke:#000000;stroke-width:0.165;stroke-dasharray:none;stroke-opacity:1"
+     id="g1126"
+     transform="matrix(1.3333333,0,0,1.3333333,0.11000003,-0.36352435)"><path
+       d="M 15.685,0.386 15.22,1.152 c 3.477,2.112 6.305,5.27 7.966,8.89 L 24,9.67 C 22.266,5.887 19.313,2.59 15.685,0.386 Z M 8.462,0.91 8.157,1.985 c 6.89,1.976 12.384,7.64 13.997,14.421 l 1.085,-0.258 C 21.535,8.977 15.735,2.997 8.462,0.909 Z M 0,2.667 v 1.342 c 10.963,0 19.883,8.795 19.883,19.605 h 1.342 C 21.225,12.064 11.703,2.667 0,2.667 Z"
+       id="path1117"
+       style="stroke:#000000;stroke-width:0.165;stroke-dasharray:none;stroke-opacity:1" /></g></svg>
