@@ -1,7 +1,6 @@
 # Archivo donde contiene las constantes de la aplicación, links, urls, lista de enlaces, etc.
 
 proyectos = [
-    {"title": "GitHub", "subtitle": "Repositorios proyectos", "url": "https://github.com/v1ct0rjs", "icon": "github"},
     {"title": "LoRaIM", "subtitle": "Plataforma mensageria instantanea que utiliza LoRa.",
      "url": "https://github.com/v1ct0rjs/LoRaIM", "icon": "loraim", "icon_path": "/loraim.svg"},
     {"title": "Grafana Octopus", "subtitle": "Stack de Monitoreo con Grafana, InfluxDB 2 y Telegraf.",
@@ -36,6 +35,7 @@ proyectos = [
      "url":"https://github.com/v1ct0rjs/iso_shell_scripts", "icon":"file-terminal"},
 ]
 enlaces = [
+    {"title": "GitHub", "subtitle": "Repositorios proyectos", "url": "https://github.com/v1ct0rjs", "icon": "github"},
     {"title": "LinkedIn", "subtitle": "Perfil De LinkedIn",
      "url": "https://www.linkedin.com/in/v1ct0rdev/", "icon": "linkedin"},
     {"title": "X", "subtitle": "Perfil de X", "url": "https://x.com/vmjimsan", "icon": "twitter",
@@ -84,12 +84,12 @@ certs = [
 # Constantes de URLS
 
 URL_GITHUB = "https://github.com/v1ct0rjs"
-URL_LINKEDIN = "https://www.linkedin.com/in/v1ct0rjs/"
-URL_INSTAGRAM = "https://www.instagram.com/v1ct0rjs/"
-URL_FACEBOOK = "https://www.facebook.com/v1ct0rjs/"
-URL_YOUTUBE = "https://www.youtube.com/v1ct0rjs/"
-URL_TWITCH = "https://www.twitch.tv/v1ct0rjs/"
-URL_MAPS = "https://www.google.com/maps/@38.4250031,-6.4183859,15z?entry=ttu"
+URL_LINKEDIN = "https://www.linkedin.com/in/v1ct0rdev/"
+URL_INSTAGRAM = ""
+URL_FACEBOOK = ""
+URL_YOUTUBE = ""
+URL_TWITCH = ""
+URL_MAPS = ""
 
 # Texto de la página
 TEXT_TAB_TITLE = "V1cT0r's Portfolio"
