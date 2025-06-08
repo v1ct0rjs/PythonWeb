@@ -1,5 +1,8 @@
 import reflex as rx
 from PythonWeb.routes import Route
+from PythonWeb.styles.styles import *
+
+@rx.page(route=Route.ENG.value)
 
 def language_button() -> rx.Component:
     """Botón para cambiar a la versión en inglés"""
