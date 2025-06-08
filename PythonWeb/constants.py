@@ -49,26 +49,57 @@ certificados = [
 ]
 
 projects = [
-    {"title": "GitHub", "subtitle": "Project repositories", "url": "https://github.com/v1ct0rjs", "icon": "github"},
-    {"title": "Python Web App", "subtitle": "Code of this same web programmed in Python",
+    {"title": "LoRaIM", "subtitle": "Instant messaging platform using LoRa.",
+     "url": "https://github.com/v1ct0rjs/LoRaIM", "icon": "loraim", "icon_path": "/loraim.svg"},
+
+    {"title": "Grafana Octopus", "subtitle": "Monitoring stack with Grafana, InfluxDB 2, and Telegraf.",
+     "url": "https://github.com/v1ct0rjs/grafana_octopus", "icon": "grafana", "icon_path": "/grafana.svg"},
+
+    {"title": "Jenkins Deployment", "subtitle": "CI/CD automation towards DockerHub using Jenkins.",
+     "url": "https://github.com/v1ct0rjs/jenkins_deployment", "icon": "jenkins", "icon_path": "/jenkins.svg"},
+
+    {"title": "SonarQube Integration",
+     "subtitle": "Public SonarQube instance using an Ngrok tunnel.",
+     "url": "https://github.com/v1ct0rjs/jenkins_deployment/tree/main/SonarQube",
+     "icon": "sonarqube", "icon_path": "/sonarqube.svg"},
+
+    {"title": "Oracle Autonomous Database", "subtitle": "Autonomous database in Oracle Cloud Infrastructure.",
+     "url": "https://github.com/v1ct0rjs/oci-autonomousdb", "icon": "database", "icon_path": "/database.svg"},
+
+    {"title": "Python Web App", "subtitle": "Code of this web app programmed with Reflex",
      "url": "https://github.com/v1ct0rjs/PythonWeb", "icon": "app-window"},
-    {"title": "Pyter", "subtitle": "Small client-server messaging program that uses gprc",
+
+    {"title": "Auto Fastfetch", "subtitle": "Python script that automatically downloads and runs Fastfetch.",
+     "url": "https://github.com/v1ct0rjs/auto_fastfetch", "icon": "terminal"},
+
+    {"title": "Pyter", "subtitle": "Small client-server messaging program using gRPC",
      "url": "https://github.com/v1ct0rjs/pyther", "icon": "message-square-text"},
-    {"title": "Wheel of Fortune", "subtitle": "Wheel of fortune game",
+
+    {"title": "Wheel of Fortune", "subtitle": "Wheel of Fortune game",
      "url": "https://github.com/v1ct0rjs/RuletaDeLaFortuna/", "icon": "dices"},
+
     {"title": "Hangman", "subtitle": "Word guessing game", "url": "https://github.com/v1ct0rjs/ahorcado/",
      "icon": "signpost-big"},
-    {"title": "PyAgenda", "subtitle": "Script, CLI task manager", "url": "https://github.com/v1ct0rjs/PyAgenda",
+
+    {"title": "PyAgenda", "subtitle": "CLI task manager script", "url": "https://github.com/v1ct0rjs/PyAgenda",
      "icon": "calendar-plus"},
-    {"title": "Activity detection bracelet", "subtitle": "Micropython program to compete in the TELECO GAMES",
+
+    {"title": "Activity Detector Bracelet", "subtitle": "Micropython program to compete in the TELECO GAMES",
      "url": "https://github.com/v1ct0rjs/m5_move-detector", "icon": "watch"},
-    {"title": "Pyng", "subtitle": "Script detector of LAN equipment", "url": "https://github.com/v1ct0rjs/Pyng",
+
+    {"title": "Pyng", "subtitle": "Script for detecting devices on LAN", "url": "https://github.com/v1ct0rjs/Pyng",
      "icon": "network"},
-    {"title": "DBOH Converter", "subtitle": "Decimal, Binary, Hexadecimal and Octal Converter",
+
+    {"title": "DBOH Converter", "subtitle": "Decimal, Binary, Hexadecimal, and Octal converter",
      "url": "https://github.com/v1ct0rjs/DBOH", "icon": "calculator"},
-    {"title": "Shell Script Users-Groups", "subtitle": "Script, Bash users and groups manager", "url":"https://github.com/v1ct0rjs/iso_shell_scripts", "icon":"file-terminal"},
+
+    {"title": "Shell Script Users-Groups", "subtitle": "Bash script for managing users and groups",
+     "url": "https://github.com/v1ct0rjs/iso_shell_scripts", "icon": "file-terminal"},
 ]
+
+
 socials = [
+{"title": "GitHub", "subtitle": "Project Repository", "url": "https://github.com/v1ct0rjs", "icon": "github"},
     {"title": "LinkedIn", "subtitle": "LinkedIn Profile",
      "url": "https://www.linkedin.com/in/v%C3%ADctor-manuel-jim%C3%A9nez-s%C3%A1nchez-53286130b/", "icon": "linkedin"},
     {"title": "X", "subtitle": "X Profile", "url": "https://x.com/vmjimsan", "icon": "twitter",
