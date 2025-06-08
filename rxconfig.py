@@ -16,12 +16,9 @@ config = rx.Config(
     frontend_packages=[                      # <── ❷ lock rc-util forever
         "rc-util@5.40.1",
     ],
+    tailwind=None,  # Desactivar Tailwind como se recomienda
 )
 
-# ❸ silence Tailwind deprecation
-config.plugins = [rx.plugins.TailwindV3Plugin()]
-#  # or, if you don’t use it:
-# config.tailwind = None
 
 
 
