@@ -7,13 +7,8 @@ from PythonWeb.styles.styles import *
 from PythonWeb.constants import *
 from PythonWeb.components.info_button import info_button
 import PythonWeb.utils as utils
-from PythonWeb.components.ant_components import float_button
+from PythonWeb.components.ant_components import language_button
 from PythonWeb.state.PageState import PageState
-
-
-
-
-
 
 @rx.page(
     title=TEXT_TAB_TITLE,
@@ -32,7 +27,6 @@ def index() -> rx.Component:
                 links('Mis Proyectos', proyectos),
                 info_button('Certificaciones', certificados),
                 links('Redes Sociales', enlaces),
-                float_button(),
                 align="center",
                 max_width=MAX_WIDTH,
                 spacing='6',
@@ -40,5 +34,6 @@ def index() -> rx.Component:
             width="100%",
             margin_y=Size.XLARGE,
         ),
+        language_button(),  # Usar la nueva función
         footer()
     )
