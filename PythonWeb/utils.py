@@ -7,6 +7,11 @@ def lang() -> rx.Component:
         "document.documentElement.lang = 'es'; document.cookie = 'backend-enabled=false'"
     )
 
+def lang_en() -> rx.Component:
+    """Set the document language to English."""
+    return rx.script(
+        "document.documentElement.lang = 'en'; document.cookie = 'backend-enabled=false'"
+    )
 
 # Common
 preview = "/preview.png"
