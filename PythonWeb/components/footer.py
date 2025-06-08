@@ -30,7 +30,7 @@ def footer() -> rx.Component:
                 align="center",
             )
         ),
-        rx.text(f"2023 - {datetime.date.today().year} By Víctor Jiménez V1.4",
+        rx.text(f"2023 - {datetime.date.today().year} By Víctor Jiménez V2.6",
                 font_size=Size.LARGE.value),
         align="center",
         color=TextColor.CONTENT.value,
