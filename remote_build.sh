@@ -9,17 +9,9 @@ source .venv/bin/activate || { echo "Error: Falló la activación del entorno vi
 
 pip install --upgrade pip
 
-if ! command -v reflex &> /dev/null; then
-    pip install reflex || { echo "Error: Falló la instalación de 'reflex'."; exit 1; }
-fi
+pip install reflex || { echo "Error: Falló la instalación de 'reflex'."; deactivate; exit 1; }
 
-pip install -r requirements.txt || { echo "Error: Falló la instalación de dependencias."; exit 1; }
-
-if ! command -v reflex &> /dev/null; then
-    echo "Error: 'reflex' no está disponible después de la instalación."
-    deactivate
-    exit 1
-fi
+pip install -r requirements.txt || { echo "Error: Falló la instalación de dependencias."; deactivate; exit 1; }
 
 if ! reflex export --frontend-only; then
     echo "Error: El comando 'reflex export --frontend-only' falló."
