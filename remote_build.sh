@@ -13,8 +13,16 @@ pip install reflex || { echo "Error: Falló la instalación de 'reflex'."; deact
 
 pip install -r requirements.txt || { echo "Error: Falló la instalación de dependencias."; deactivate; exit 1; }
 
+if ! command -v reflex &> /dev/null; then
+    echo "Error: 'reflex' no está disponible después de la instalación."
+    deactivate
+    exit 1
+fi
+
 if ! reflex export --frontend-only; then
     echo "Error: El comando 'reflex export --frontend-only' falló."
+    echo "Detalles del error:"
+    reflex export --frontend-only 2>&1
     deactivate
     exit 1
 fi
