@@ -3,6 +3,8 @@
 proyectos = [
     {"title": "LoRaIM", "subtitle": "Plataforma mensageria instantanea que utiliza LoRa.",
      "url": "https://github.com/v1ct0rjs/LoRaIM", "icon": "loraim", "icon_path": "/loraim.svg"},
+    {"title": "10Tacle WebApp", "subtitle": "10Tacle, Dj and electronic music producer web app",
+     "url": "https://10tacle.org", "icon": "app-windows"},
     {"title": "Grafana Octopus", "subtitle": "Stack de Monitoreo con Grafana, InfluxDB 2 y Telegraf.",
      "url": "https://github.com/v1ct0rjs/grafana_octopus", "icon": "grafana", "icon_path": "/grafana.svg"},
     {"title": "Jenkins Deployment", "subtitle": "Automatización CD/CI hacia DockerHub utilizando Jenkins.",
