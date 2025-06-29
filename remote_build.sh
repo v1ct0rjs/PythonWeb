@@ -5,13 +5,16 @@ if ! command -v python3 &> /dev/null; then
     apt-get update && apt-get install -y python3 python3-pip
 fi
 
+# Actualizar pip a la última versión
+pip3 install --upgrade pip
+
 # Instalar Reflex si no está disponible
 if ! command -v reflex &> /dev/null; then
-    pip3 install reflex
+    pip3 install reflex || { echo "Error: Falló la instalación de 'reflex'."; exit 1; }
 fi
 
 # Instalar dependencias de Python
-pip3 install -r requirements.txt
+pip3 install -r requirements.txt || { echo "Error: Falló la instalación de dependencias."; exit 1; }
 
 # Exportar el frontend de Reflex
 if ! reflex export --frontend-only; then
