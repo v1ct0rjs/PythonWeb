@@ -5,6 +5,7 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 #rm -rf public
+mkdir public
 reflex init
 # API_URL ya no es necesaria aquí
 # API_URL=https://api.v1ct0r.dev reflex export --frontend-only
