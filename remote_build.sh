@@ -1,9 +1,15 @@
 #!/bin/bash
 
-if ! command -v python3 &> /dev/null; then
-    apt-get update && apt-get install -y python3 python3-pip
+# Verificar la versión de Python
+PYTHON_VERSION=$(python3 --version 2>&1 | awk '{print $2}')
+REQUIRED_VERSION="3.12"
+
+if [[ "$PYTHON_VERSION" != "$REQUIRED_VERSION"* ]]; then
+    echo "Error: Se requiere Python $REQUIRED_VERSION, pero se encontró Python $PYTHON_VERSION."
+    exit 1
 fi
 
+# Continuar con el resto del script
 python3 -m venv .venv || { echo "Error: Falló la creación del entorno virtual."; exit 1; }
 source .venv/bin/activate || { echo "Error: Falló la activación del entorno virtual."; exit 1; }
 
@@ -21,8 +27,6 @@ fi
 
 if ! reflex export --frontend-only; then
     echo "Error: El comando 'reflex export --frontend-only' falló."
-    echo "Detalles del error:"
-    reflex export --frontend-only 2>&1
     deactivate
     exit 1
 fi
