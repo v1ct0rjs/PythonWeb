@@ -7,8 +7,15 @@ from PythonWeb.state.PageState import PageState
 def info_button(titulo: str, enlaces: list) -> rx.Component:
     componentes = [title(titulo)]
     for enlace in enlaces:
-        componentes.append(no_link_button(enlace['title'], enlace['subtitle']))
+        componentes.append(
+            no_link_button(
+                enlace['title'],
+                enlace['subtitle'],
+                icon_path=enlace['icon_path']
+            )
+        )
     return rx.vstack(*componentes, align="start", width="100%")
+
 
 def twitch_info_panel(titulo: str, info: str, img_path: str, alt='') -> rx.Component:
     return rx.box(

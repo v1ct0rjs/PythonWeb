@@ -1,15 +1,13 @@
-import reflex as rx
 from PythonWeb.styles.styles import *
 
-def no_link_button(title: str, subtitle: str) -> rx.Component:
-    return rx.box(
-            rx.hstack(
+def no_link_button(title: str, subtitle: str, icon_path: str) -> rx.Component:
+    return rx.box(rx.hstack(
                     rx.image(
-                        src='/cybersecurity-essentials.png',
+                        src=icon_path,
                         width=Size.XXLARGE.value,
                         height=Size.XXLARGE.value,
                         margin=Size.MEDIUM.value,
-                        alt="Sello de certificación Cisco"
+                        alt=title
                     ),
                 rx.vstack(
                     rx.text(title, style=button_title_style, color=Color.PRIMARY.value),
@@ -21,3 +19,4 @@ def no_link_button(title: str, subtitle: str) -> rx.Component:
             ),
         style=no_button_style,
     )
+

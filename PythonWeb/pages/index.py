@@ -25,7 +25,7 @@ def index() -> rx.Component:
             rx.vstack(
                 header(TEXTO_TITULO, TEXTO_HEADER, TEXTO_PAIS, TEXTO_CONTACTO, PageState.is_live, PageState.live_tittle, "en directo"),
                 links('Mis Proyectos', proyectos),
-                info_button('Certificaciones', certificados),
+                info_button('Certificaciones', certs),
                 links('Redes Sociales', enlaces),
                 align="center",
                 max_width=MAX_WIDTH,
