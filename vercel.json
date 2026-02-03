@@ -1,8 +1,9 @@
 {
-  "functions": {
-    "*.py": {
-      "runtime": "python3.12"
+  "build": {
+    "env": {
+      "PYTHON_VERSION": "3.12"
     }
   }
 }
+
 
