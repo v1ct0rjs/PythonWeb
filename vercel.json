@@ -1,7 +1,8 @@
 {
-  "build": {
-    "env": {
-      "VERCEL_PYTHON_VERSION": "3.12"
+  "functions": {
+    "*.py": {
+      "runtime": "python3.12"
     }
   }
 }
+
