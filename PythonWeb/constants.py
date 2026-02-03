@@ -1,7 +1,7 @@
 # Archivo donde contiene las constantes de la aplicación, links, urls, lista de enlaces, etc.
 
 proyectos = [
-    {"title": "OCR Document Search System", "subtitle": "Sistema de indexación y búsqueda de documentos que utiliza OCR.",
+    {"title": "OCR Document Search System", "subtitle": "Sistema de indexación y búsqueda de documentos con OCR.",
      "url": "https://github.com/v1ct0rjs/ocr-search-system", "icon": "file-search"},
 
     {"title": "LoRaIM", "subtitle": "Plataforma mensageria instantanea que utiliza LoRa.",
