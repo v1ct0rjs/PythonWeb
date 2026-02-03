@@ -1,38 +1,56 @@
 # Archivo donde contiene las constantes de la aplicación, links, urls, lista de enlaces, etc.
 
 proyectos = [
+    {"title": "OCR Document Search System", "subtitle": "Un sistema de indexación y búsqueda de documentos que utiliza OCR.",
+     "url": "https://github.com/v1ct0rjs/ocr-search-system", "icon": "file-search"},
+
     {"title": "LoRaIM", "subtitle": "Plataforma mensageria instantanea que utiliza LoRa.",
      "url": "https://github.com/v1ct0rjs/LoRaIM", "icon": "loraim", "icon_path": "/loraim.svg"},
+
     {"title": "10Tacle WebApp", "subtitle": "10Tacle, Dj and electronic music producer web app",
      "url": "https://10tacle.org", "icon": "app_window"},
+
     {"title": "Grafana Octopus", "subtitle": "Stack de Monitoreo con Grafana, InfluxDB 2 y Telegraf.",
      "url": "https://github.com/v1ct0rjs/grafana_octopus", "icon": "grafana", "icon_path": "/grafana.svg"},
+
     {"title": "Jenkins Deployment", "subtitle": "Automatización CD/CI hacia DockerHub utilizando Jenkins.",
      "url": "https://github.com/v1ct0rjs/jenkins_deployment", "icon": "jenkins", "icon_path": "/jenkins.svg"},
+
     {"title": "Integración SonarQube",
      "subtitle": "Instancia pública de SonarQube utilizando un tunel Ngrok.",
      "url": "https://github.com/v1ct0rjs/jenkins_deployment/tree/main/SonarQube",
      "icon": "sonarqube", "icon_path": "/sonarqube.svg"},
+
     {"title": "Oracle Base de Datos Autonoma", "subtitle": "Base de datos autónoma en Oracle Cloud Infrastructure.",
      "url": "https://github.com/v1ct0rjs/oci-autonomousdb", "icon": "database", "icon_path": "/database.svg"},
+
     {"title": "Python Web App", "subtitle": "Código de está web app programáda con Reflex",
      "url": "https://github.com/v1ct0rjs/PythonWeb", "icon": "app-window"},
+
     {"title": "Auto Fastfetch", "subtitle": "Script en Python que descarga y ejecuta Fastfetch automático.",
      "url": "https://github.com/v1ct0rjs/auto_fastfetch", "icon": "terminal"},
+
     {"title": "Pyter", "subtitle": "Pequeño programa de mensajeria cliente-servidor que usa gprc",
      "url": "https://github.com/v1ct0rjs/pyther", "icon": "message-square-text"},
+
     {"title": "Ruleta de la fortuna", "subtitle": "Juego de la ruleta de la fortuna",
      "url": "https://github.com/v1ct0rjs/RuletaDeLaFortuna/", "icon": "dices"},
+
     {"title": "Ahorcado", "subtitle": "Juego de adivinar palabras", "url": "https://github.com/v1ct0rjs/ahorcado/",
      "icon": "signpost-big"},
+
     {"title": "PyAgenda", "subtitle": "Script, gestor de tareas CLI", "url": "https://github.com/v1ct0rjs/PyAgenda",
      "icon": "calendar-plus"},
+
     {"title": "Pulsera detector de actividad", "subtitle": "Programa en micropython para competir en los TELECO GAMES",
      "url": "https://github.com/v1ct0rjs/m5_move-detector", "icon": "watch"},
+
     {"title": "Pyng", "subtitle": "Script detector de equipos en LAN", "url": "https://github.com/v1ct0rjs/Pyng",
      "icon": "network"},
+
     {"title": "Conversor DBOH", "subtitle": "Conversor Decimal, Binario, Hexadecimal y Octal",
      "url": "https://github.com/v1ct0rjs/DBOH", "icon": "calculator"},
+
     {"title": "Shell Script Usuarios-Grupos", "subtitle": "Script, gestor de usuarios y grupos Bash",
      "url":"https://github.com/v1ct0rjs/iso_shell_scripts", "icon":"file-terminal"},
 ]
@@ -46,11 +64,10 @@ enlaces = [
      "icon": "twitter", "icon_path": "mastodon.svg"},
 ]
 
-certificados = [
-    {"title": "Cybersecurity Cisco", "subtitle": "Certificado de ciberseguridad"},
-]
-
 projects = [
+    {"title": "OCR Document Search System", "subtitle": "A document indexing and search system for documents using OCR.",
+     "url": "https://github.com/v1ct0rjs/ocr-search-system", "icon": "file-search"},
+
     {"title": "LoRaIM", "subtitle": "Instant messaging platform using LoRa.",
      "url": "https://github.com/v1ct0rjs/LoRaIM", "icon": "loraim", "icon_path": "/loraim.svg"},
 
