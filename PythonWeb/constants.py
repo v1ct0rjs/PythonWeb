@@ -111,8 +111,10 @@ socials = [
 ]
 
 certs = [
-    {"title": "Cybersecurity Cisco", "subtitle": "Cybersecurity Certificate"},
+    {"title": "AWS Academy Graduate", "subtitle": "Cloud Foundations", "icon_path": "aws_cloud.png"},
+    {"title": "Cybersecurity Cisco", "subtitle": "Cybersecurity Certificate", "icon_path": "cybersecurity-essentials.png"},
 ]
+
 
 # Constantes de URLS
 
