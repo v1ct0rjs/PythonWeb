@@ -1,6 +1,9 @@
 # Archivo donde contiene las constantes de la aplicación, links, urls, lista de enlaces, etc.
 
 proyectos = [
+    {"title": "Yolo Alarm", "subtitle": "Sistema de detección de movimiento e identificación de objetos",
+     "url": "https://github.com/v1ct0rjs/yoloAlarm", "icon": "camera"},
+
     {"title": "OCR Document Search System", "subtitle": "Sistema de indexación y búsqueda de documentos con OCR.",
      "url": "https://github.com/v1ct0rjs/ocr-search-system", "icon": "file-search"},
 
@@ -65,6 +68,9 @@ enlaces = [
 ]
 
 projects = [
+    {"title": "Yolo Alarm", "subtitle": "Motion detection and object identification system",
+     "url": "https://github.com/v1ct0rjs/yoloAlarm", "icon": "camera"},
+
     {"title": "OCR Document Search System", "subtitle": "A document indexing and search system for documents using OCR.",
      "url": "https://github.com/v1ct0rjs/ocr-search-system", "icon": "file-search"},
 
