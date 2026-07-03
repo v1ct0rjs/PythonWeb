@@ -173,5 +173,5 @@ STYLES_AND_FONTS = [
 
 GTAG = "G-QFHWGRCS3T"
 
-NAVBAR_ESP = "['V1cT0r', 'l1nuX3r0', 'PyTh0n1sta', 'D3v3l0p3r']"
-NAVBAR_ENG = "['V1cT0r', 'l1nuX3r', 'PyTh0n1st', 'D3v3l0p3r']"
+NAVBAR_ESP = "['V1cT0r', 'D3v_1A', 'B1g_D4t4', 'SysAdm1n', 'l1nuX3r0', 'PyTh0n1sta']"
+NAVBAR_ENG = "['V1cT0r', 'AI_D3v', 'B1g_D4t4', 'SysAdm1n', 'l1nuX3r', 'PyTh0n1st']"
