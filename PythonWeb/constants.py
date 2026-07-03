@@ -13,6 +13,9 @@ proyectos = [
     {"title": "10Tacle WebApp", "subtitle": "10Tacle, Dj and electronic music producer web app",
      "url": "https://10tacle.org", "icon": "app_window"},
 
+    {"title": "El Campito WebApp", "subtitle": "Pagina web para apartamento rural El Campito",
+     "url": "https://elcampito.octopusradio.org/", "icon": "app_window"},
+
     {"title": "Grafana Octopus", "subtitle": "Stack de Monitoreo con Grafana, InfluxDB 2 y Telegraf.",
      "url": "https://github.com/v1ct0rjs/grafana_octopus", "icon": "grafana", "icon_path": "/grafana.svg"},
 
@@ -58,9 +61,10 @@ proyectos = [
      "url":"https://github.com/v1ct0rjs/iso_shell_scripts", "icon":"file-terminal"},
 ]
 enlaces = [
-    {"title": "GitHub", "subtitle": "Repositorios proyectos", "url": "https://github.com/v1ct0rjs", "icon": "github"},
+    {"title": "GitHub", "subtitle": "Repositorios proyectos", "url": "https://github.com/v1ct0rjs",
+     "icon": "github", "icon_path": "/github.svg"},
     {"title": "LinkedIn", "subtitle": "Perfil De LinkedIn",
-     "url": "https://www.linkedin.com/in/v1ct0rdev/", "icon": "linkedin"},
+     "url": "https://www.linkedin.com/in/v1ct0rdev/", "icon": "linkedin", "icon_path": "/linkedin.svg"},
     {"title": "X", "subtitle": "Perfil de X", "url": "https://x.com/vmjimsan", "icon": "twitter",
      "icon_path": "x-twitter.svg"},
     {"title": "Mastodon", "subtitle": "Perfil de Mastodon", "url": "https://mastodon.social/@v1ct0rjs",
@@ -76,6 +80,12 @@ projects = [
 
     {"title": "LoRaIM", "subtitle": "Instant messaging platform using LoRa.",
      "url": "https://github.com/v1ct0rjs/LoRaIM", "icon": "loraim", "icon_path": "/loraim.svg"},
+
+    {"title": "10Tacle WebApp", "subtitle": "Web app for 10Tacle, DJ and electronic music producer",
+     "url": "https://10tacle.org", "icon": "app-window"},
+
+    {"title": "El Campito WebApp", "subtitle": "Website for El Campito rural apartment",
+     "url": "https://elcampito.octopusradio.org/", "icon": "app-window"},
 
     {"title": "Grafana Octopus", "subtitle": "Monitoring stack with Grafana, InfluxDB 2, and Telegraf.",
      "url": "https://github.com/v1ct0rjs/grafana_octopus", "icon": "grafana", "icon_path": "/grafana.svg"},
@@ -124,9 +134,9 @@ projects = [
 
 
 socials = [
-{"title": "GitHub", "subtitle": "Project Repository", "url": "https://github.com/v1ct0rjs", "icon": "github"},
+{"title": "GitHub", "subtitle": "Project Repository", "url": "https://github.com/v1ct0rjs", "icon": "github", "icon_path": "/github.svg"},
     {"title": "LinkedIn", "subtitle": "LinkedIn Profile",
-     "url": "https://www.linkedin.com/in/v%C3%ADctor-manuel-jim%C3%A9nez-s%C3%A1nchez-53286130b/", "icon": "linkedin"},
+     "url": "https://www.linkedin.com/in/v%C3%ADctor-manuel-jim%C3%A9nez-s%C3%A1nchez-53286130b/", "icon": "linkedin", "icon_path": "/linkedin.svg"},
     {"title": "X", "subtitle": "X Profile", "url": "https://x.com/vmjimsan", "icon": "twitter",
      "icon_path": "/x-twitter.svg"},
     {"title": "Mastodon", "subtitle": "Mastodon Profile", "url": "https://mastodon.social/@v1ct0rjs",
@@ -152,12 +162,14 @@ URL_MAPS = ""
 # Texto de la página
 TEXT_TAB_TITLE = "V1cT0r's Portfolio"
 TEXTO_TITULO = "Desarrollador IA & Big Data, SysAdmin, Pythonista y Linuxero"
-TEXTO_HEADER = """Desarrollador de Inteligencia Artificial y Big Data, con perfil de SysAdmin y experiencia en Python, Deep Learning, MLOps, Linux y arquitecturas Cloud. Actualmente trabajo como Arquitecto DevOps/Cloud.
+TEXTO_HEADER = """Desarrollador de Inteligencia Artificial y Big Data, con perfil de SysAdmin y experiencia en Python, 
+Deep Learning, MLOps, Linux y arquitecturas Cloud. Sysadmin y Arquitecto DevOps/Cloud.
 """
 TEXTO_PAIS = "España"
 TEXTO_CONTACTO = ""
 
-TEXT_ENG_HEADER = """Artificial Intelligence and Big Data Developer with a SysAdmin background and experience in Python, Deep Learning, MLOps, Linux, and Cloud architectures. Currently working as a DevOps/Cloud Architect.
+TEXT_ENG_HEADER = """Artificial Intelligence and Big Data Developer with a SysAdmin background and experience in 
+Python, Deep Learning, MLOps, Linux, and Cloud architectures. Sysadmin and DevOps/Cloud Architect.
 """
 TEXT_ENG_TITULO = "AI & Big Data Developer, SysAdmin, Pythonist and Linuxer"
 TEXT_ENG_COUNTRY = "Spain"
