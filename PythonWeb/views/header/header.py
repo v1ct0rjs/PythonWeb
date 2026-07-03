@@ -1,6 +1,7 @@
 import reflex as rx
 from PythonWeb.styles.styles import *
 from PythonWeb.components.link_icon import link_icon
+from PythonWeb.components.link_icon_svg import link_icon_svg
 from PythonWeb.components.info_text import info_text
 from PythonWeb.styles.colors import Colors as Color
 from PythonWeb.styles.colors import Fonts as Fonts
@@ -39,11 +40,12 @@ def header (titulo: str, header: str, country: str, contact: str, is_live: bool,
                 ),
             ),
             rx.hstack(rx.text(contact, font_size=Size.MEDIUM.value, color=TextColor.WHITE.value),
-                link_icon("https://github.com/v1ct0rjs", "github"),
-                link_icon("mailto:vmjimenezs02@educarex.es", "mail"),
-                link_icon("https://t.me/p3sc4", "send"),
-                color=Color.PRIMARY.value,
-            ),
+              link_icon_svg("https://github.com/v1ct0rjs", "/github.svg", "GitHub"),
+              link_icon_svg("https://www.linkedin.com/in/v1ct0rdev/", "/linkedin.svg", "LinkedIn"),
+              link_icon("mailto:vmjimenezs02@educarex.es", "mail"),
+              link_icon("https://t.me/p3sc4", "send"),
+              color=Color.PRIMARY.value,
+              ),
         ),
         spacing = '5'
         ),
