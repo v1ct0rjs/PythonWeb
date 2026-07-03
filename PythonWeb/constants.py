@@ -151,15 +151,15 @@ URL_MAPS = ""
 
 # Texto de la página
 TEXT_TAB_TITLE = "V1cT0r's Portfolio"
-TEXTO_TITULO = "Desarrollador, Pythonista y Linuxero"
-TEXTO_HEADER = """Hola, soy un desarrollador entusiasta con un sólido conocimiento en Python, HTML, C️, electrónica, desplieges, redes y servidores.
-He programado para proyectos de domótica y ahora estoy expandiendo mis horizontes hacia el desarrollo frontend ."""
+TEXTO_TITULO = "Desarrollador IA & Big Data, SysAdmin, Pythonista y Linuxero"
+TEXTO_HEADER = """Desarrollador de Inteligencia Artificial y Big Data, con perfil de SysAdmin y experiencia en Python, Deep Learning, MLOps, Linux y arquitecturas Cloud. Actualmente trabajo como Arquitecto DevOps/Cloud.
+"""
 TEXTO_PAIS = "España"
 TEXTO_CONTACTO = ""
 
-TEXT_ENG_HEADER = """Hello, I am an enthusiastic developer with a solid knowledge in Python, HTML, C️, electronics, and servers.
-I have programmed for home automation projects and now I am expanding my horizons towards frontend development."""
-TEXT_ENG_TITULO = "Developer, Pythonist and Linuxer"
+TEXT_ENG_HEADER = """Artificial Intelligence and Big Data Developer with a SysAdmin background and experience in Python, Deep Learning, MLOps, Linux, and Cloud architectures. Currently working as a DevOps/Cloud Architect.
+"""
+TEXT_ENG_TITULO = "AI & Big Data Developer, SysAdmin, Pythonist and Linuxer"
 TEXT_ENG_COUNTRY = "Spain"
 TEXT_ENG_CONTACT = ""
 # Fuentes de la página
