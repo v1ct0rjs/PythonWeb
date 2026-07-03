@@ -16,10 +16,9 @@ config = rx.Config(
     frontend_packages=[                      # <── ❷ lock rc-util forever
         "rc-util@5.40.1",
     ],
+    plugins=[
+        rx.plugins.RadixThemesPlugin(),
+        rx.plugins.SitemapPlugin(),
+    ],
     tailwind=None,  # Desactivar Tailwind como se recomienda
 )
-
-
-
-
-
