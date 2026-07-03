@@ -163,13 +163,13 @@ URL_MAPS = ""
 TEXT_TAB_TITLE = "V1cT0r's Portfolio"
 TEXTO_TITULO = "Desarrollador IA & Big Data, SysAdmin y Linuxero"
 TEXTO_HEADER = """Desarrollador de Inteligencia Artificial y Big Data, con perfil de SysAdmin y experiencia en Python, 
-Deep Learning, MLOps, Linux y arquitecturas Cloud. Sysadmin y Arquitecto DevOps/Cloud.
+Deep Learning, MLOps, Linux y arquitecturas Cloud.
 """
 TEXTO_PAIS = "España"
 TEXTO_CONTACTO = ""
 
 TEXT_ENG_HEADER = """Artificial Intelligence and Big Data Developer with a SysAdmin background and experience in 
-Python, Deep Learning, MLOps, Linux, and Cloud architectures. Sysadmin and DevOps/Cloud Architect.
+Python, Deep Learning, MLOps, Linux, and Cloud architectures.
 """
 TEXT_ENG_TITULO = "AI & Big Data Developer, SysAdmin and Linuxer"
 TEXT_ENG_COUNTRY = "Spain"
