@@ -14,7 +14,7 @@ proyectos = [
      "url": "https://10tacle.org", "icon": "app_window"},
 
     {"title": "El Campito WebApp", "subtitle": "Pagina web para apartamento rural El Campito",
-     "url": "https://elcampito.octopusradio.org/", "icon": "app_window"},
+     "url": "https://elcampitoo.net/", "icon": "app_window"},
 
     {"title": "Grafana Octopus", "subtitle": "Stack de Monitoreo con Grafana, InfluxDB 2 y Telegraf.",
      "url": "https://github.com/v1ct0rjs/grafana_octopus", "icon": "grafana", "icon_path": "/grafana.svg"},
@@ -85,7 +85,7 @@ projects = [
      "url": "https://10tacle.org", "icon": "app-window"},
 
     {"title": "El Campito WebApp", "subtitle": "Website for El Campito rural apartment",
-     "url": "https://elcampito.octopusradio.org/", "icon": "app-window"},
+     "url": "https://elcampitoo.net/", "icon": "app-window"},
 
     {"title": "Grafana Octopus", "subtitle": "Monitoring stack with Grafana, InfluxDB 2, and Telegraf.",
      "url": "https://github.com/v1ct0rjs/grafana_octopus", "icon": "grafana", "icon_path": "/grafana.svg"},
