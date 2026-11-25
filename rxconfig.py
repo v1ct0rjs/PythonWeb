@@ -17,7 +17,9 @@ config = rx.Config(
         "rc-util@5.40.1",
     ],
     plugins=[
-        rx.plugins.RadixThemesPlugin(),
+        rx.plugins.RadixThemesPlugin(
+            theme=rx.theme(appearance="dark", accent_color="teal", gray_color="slate", radius="large"),
+        ),
         rx.plugins.SitemapPlugin(),
     ],
     tailwind=None,  # Desactivar Tailwind como se recomienda
