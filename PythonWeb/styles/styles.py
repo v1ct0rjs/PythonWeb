@@ -4,11 +4,10 @@ from .colors import Colors as Color
 from .colors import TextColor as TextColor
 from .colors import Fonts as Fonts
 
-#constantes de estilo
-MAX_WIDTH = '600px'
+MAX_WIDTH = '1100px'
+MONO = f"'{Fonts.JETBRAINS_MONO.value}', ui-monospace, monospace"
+SANS = f"'{Fonts.INTER.value}', system-ui, sans-serif"
 
-
-# Sizes
 
 class Size(Enum):
     ZERO = '0'
@@ -21,69 +20,117 @@ class Size(Enum):
     BIG = '6em'
     XBIG = '8em'
 
-# Styles
-
 
 BASE_STYLE = {
+    "font_family": SANS,
+    "color": TextColor.BODY.value,
     "background_color": Color.BACKGROUND.value,
-    rx.button: {
-        "width": "100%",
-        "height": "100%",
-        "display": "block",
-        "padding": Size.SMALL.value,
-        "border_radius": Size.SMALL.value,
-        "color": TextColor.BLACK.value,
-        "background_color": Color.PRIMARY.value,
-        "_hover": {
-            "background_color": Color.WHITE.value,
-        }
-    },
     rx.link: {
         "text_decoration": "none",
         "color": "inherit",
-        "_hover": {},
-    }
+        "_hover": {"text_decoration": "none"},
+    },
 }
 
-button_title_style = dict(
-    font_size=Size.MLARGE.value,
+# --- Tarjetas ---------------------------------------------------------------
+
+card_style = dict(
+    display="block",
+    width="100%",
+    height="100%",
+    background_color=Color.SURFACE.value,
+    border=f"1px solid {Color.BORDER.value}",
+    border_radius="12px",
+    padding="1.1em 1.2em",
+)
+
+card_title_style = dict(
+    font_family=MONO,
+    font_weight="600",
+    font_size="1.05em",
+    color=TextColor.BODY.value,
+)
+
+card_body_style = dict(
+    font_size="0.92em",
+    line_height="1.5",
+    color=TextColor.MUTED.value,
+)
+
+tag_style = dict(
+    font_family=MONO,
+    font_size="0.72em",
+    padding="0.15em 0.6em",
+    border_radius="999px",
+    color=TextColor.PRIMARY.value,
+    background_color="rgba(29, 211, 176, 0.08)",
+    border="1px solid rgba(29, 211, 176, 0.3)",
+    white_space="nowrap",
+)
+
+# --- Botones de acción -------------------------------------------------------
+
+_cta_base = dict(
+    display="inline-flex",
+    align_items="center",
+    gap="0.5em",
+    font_family=MONO,
+    font_weight="600",
+    font_size="0.9em",
+    padding="0.6em 1.1em",
+    border_radius="8px",
+    transition="background-color .2s ease, color .2s ease",
+)
+
+cta_primary_style = dict(
+    _cta_base,
+    background_color=Color.PRIMARY.value,
     color=TextColor.BLACK.value,
-    font_family=Fonts.JETBRAINS_MONO.value,
+    border=f"1px solid {Color.PRIMARY.value}",
+    _hover=dict(background_color=Color.SECONDARY.value, color=TextColor.BLACK.value),
 )
 
-button_body_style = dict(
-    font_size=Size.LARGE.value,
-    color=TextColor.CONTENT.value,
-    font_family=Fonts.JETBRAINS_MONO.value,
+cta_secondary_style = dict(
+    _cta_base,
+    background_color="transparent",
+    color=TextColor.PRIMARY.value,
+    border=f"1px solid {Color.PRIMARY.value}",
+    _hover=dict(background_color="rgba(29, 211, 176, 0.1)", color=TextColor.PRIMARY.value),
 )
 
-head_stile = dict(
-    width='100%',
-    padding=Size.MEDIUM.value,
-    color=Color.PRIMARY.value,
-)
+# --- Navbar -----------------------------------------------------------------
 
 navbar_style = dict(
     position="sticky",
-    #background="linear-gradient(to bottom, " + Color.CONTENT.value + ", transparent)",
-    background=Color.BACKGROUND.value,
-    padding_x=Size.SMALL.value,
-    padding_y=Size.SMALL.value,
-    z_index="999",
     top="0",
-    font_family=Fonts.UBUNTU_SANS_MONO.value,
-    font_weight="600",
+    z_index="999",
+    width="100%",
+    padding="0.75em 1.25em",
+    background_color="rgba(0, 0, 0, 0.75)",
+    backdrop_filter="blur(8px)",
+    border_bottom=f"1px solid {Color.BORDER.value}",
+    font_family=MONO,
 )
 
-no_button_style = dict(
-        width="100%",
-        height="100%",
-        display="block",
-        padding=Size.SMALL.value,
-        border_radius=Size.SMALL.value,
-        color=TextColor.BLACK.value,
-        background_color=Color.BACKGROUND.value,
-        border="4px",
-        border_color=Color.PRIMARY.value,
-        border_style="solid",
+nav_link_style = dict(
+    font_size="0.9em",
+    color=TextColor.MUTED.value,
+    _hover=dict(color=TextColor.PRIMARY.value),
+)
+
+# --- Secciones --------------------------------------------------------------
+
+section_style = dict(
+    width="100%",
+    scroll_margin_top="5em",
+    spacing="4",
+    align="start",
+)
+
+subheading_style = dict(
+    font_family=MONO,
+    font_size="0.85em",
+    text_transform="uppercase",
+    letter_spacing="0.08em",
+    color=TextColor.MUTED.value,
 )
