@@ -1,6 +1,9 @@
 {
   "name": "pythonweb-frontend",
   "version": "1.0.0",
+  "engines": {
+    "node": "26.x"
+  },
   "scripts": {
     "build": "echo 'Build handled by vercel.json'"
   },
