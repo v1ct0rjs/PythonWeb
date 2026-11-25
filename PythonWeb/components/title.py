@@ -1,14 +1,16 @@
 import reflex as rx
-from PythonWeb.styles.styles import *
-from PythonWeb.styles.colors import Fonts
+from PythonWeb.styles.styles import MONO
+from PythonWeb.styles.colors import TextColor
 
 
 def title(text: str) -> rx.Component:
+    """Título de sección con estética de terminal: ~/texto"""
     return rx.heading(
+        rx.text.span("~/", color=TextColor.PRIMARY.value),
         text,
-        stiles=head_stile,
-        color=TextColor.PRIMARY.value,
-        font_size=Size.XLARGE.value,
-        font_family=Fonts.JETBRAINS_MONO.value,
+        as_="h2",
+        font_family=MONO,
         font_weight="700",
+        font_size="1.6em",
+        color=TextColor.BODY.value,
     )

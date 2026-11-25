@@ -1,6 +1,6 @@
 import reflex as rx
-from PythonWeb.styles.styles import *
-from PythonWeb.constants import *
+from PythonWeb.styles.styles import BASE_STYLE
+from PythonWeb.constants import STYLES_AND_FONTS, GTAG
 
 
 import PythonWeb.pages.index

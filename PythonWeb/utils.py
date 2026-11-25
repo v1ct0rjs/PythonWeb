@@ -1,16 +1,11 @@
 import reflex as rx
-from PythonWeb.constants import *
+from PythonWeb.constants import TEXTO_HEADER, TEXT_ENG_HEADER
 
 
-def lang() -> rx.Component:
+def lang_script(lang: str) -> rx.Component:
+    """Fija el idioma del documento (es/en)."""
     return rx.script(
-        "document.documentElement.lang = 'es'; document.cookie = 'backend-enabled=false'"
-    )
-
-def lang_en() -> rx.Component:
-    """Set the document language to English."""
-    return rx.script(
-        "document.documentElement.lang = 'en'; document.cookie = 'backend-enabled=false'"
+        f"document.documentElement.lang = '{lang}'; document.cookie = 'backend-enabled=false'"
     )
 
 # Common

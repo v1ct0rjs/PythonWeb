@@ -1,11 +1,46 @@
-@keyframes blinker {
-    50% {
-        opacity: 0;
-    }
+html {
+    scroll-behavior: smooth;
 }
 
-.blink {
-    animation: blinker 2s linear infinite;
+body {
+    background-color: #000;
+    color: #e6edf0;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+::selection {
+    background: rgba(29, 211, 176, 0.35);
+}
+
+/* Tarjetas */
+.card {
+    transition: border-color .2s ease, background-color .2s ease, transform .2s ease;
+}
+
+.card:hover,
+.card:focus-visible {
+    border-color: #1dd3b0 !important;
+    background-color: #0f191b !important;
+    transform: translateY(-2px);
+}
+
+.card:hover .card-arrow {
+    color: #1dd3b0 !important;
+    transform: translate(2px, -2px);
+}
+
+.card-arrow {
+    transition: color .2s ease, transform .2s ease;
+}
+
+a:focus-visible {
+    outline: 2px solid #1dd3b0;
+    outline-offset: 3px;
+}
+
+/* Animaciones (solo si el usuario no ha pedido reducir el movimiento) */
+@keyframes blinker {
+    50% { opacity: 0; }
 }
 
 @keyframes shake {
@@ -22,6 +57,13 @@
     99%, 100% { transform: translate(1px, 2px) rotate(0deg); }
 }
 
-.shake {
-    animation: shake 5s infinite;
+@media (prefers-reduced-motion: no-preference) {
+    .blink { animation: blinker 2s linear infinite; }
+    .shake { animation: shake 5s infinite; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .card, .card-arrow { transition: none; }
+    .card:hover { transform: none; }
 }
