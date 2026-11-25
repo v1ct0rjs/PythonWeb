@@ -15,7 +15,9 @@ echo "🏗️ Building frontend..."
 reflex export --frontend-only
 
 echo "📁 Extrayendo archivos..."
-unzip frontend.zip -d public
+rm -rf public
+unzip -q -o frontend.zip -d public
+rm -f frontend.zip
 
 echo "✅ Build completado!"
 # echo "🔗 Frontend configurado para conectar a: $API_URL" # Mensaje ya no relevante

@@ -41,7 +41,8 @@ if [ ! -f frontend.zip ]; then
     exit 1
 fi
 
-unzip frontend.zip -d public || { echo "Error: Falló la descompresión de 'frontend.zip'."; deactivate; exit 1; }
+rm -rf public
+unzip -q -o frontend.zip -d public || { echo "Error: Falló la descompresión de 'frontend.zip'."; deactivate; exit 1; }
 
 rm -f frontend.zip
 deactivate
